@@ -96,6 +96,6 @@
             <span>Desarrollado por <a href="https://www.strokbig.com/">STROKBIG</a></span>
         </footer>
     </div>
-    <script src="scripts/mi-cuenta.js?v=1" defer></script>
+    <script src="scripts/mi-cuenta.js?v=2" defer></script>
 </body>
 </html>

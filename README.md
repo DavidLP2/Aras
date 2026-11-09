@@ -253,7 +253,4 @@ enlace de restablecimiento desde “¿Olvidaste tu contraseña?”.
 Apache usa `.htaccess` para servir la página de error responsive [404.html](./404.html)
 cuando una ruta del sitio no existe.
 
-La recogida está disponible en Medellín (Calle 49A No 57A - 11, Espíritu Santo)
-y Bogotá (Carrera 38 No 10A - 206, Conjunto Residencial Cala).
-
 El favicon del sitio se encuentra en [`img/favicon.ico`](./img/favicon.ico).
