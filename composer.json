@@ -1,0 +1,9 @@
+{
+    "license": "proprietary",
+    "require": {
+        "phpmailer/phpmailer": "^6.10"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/aras-favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicon.ico?v=2" sizes="any">
+    <title>ARAS | Catálogo</title>
+    <meta name="description" content="Explora el catálogo ARAS de cuidado personal, belleza y perfumería.">
+    <link rel="stylesheet" href="styles/catalogo.css?v=28">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+    <header>
+        <button class="hamburger" id="hamburger-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <a class="logo" href="./" aria-label="ARAS, catálogo">
+            <span class="logo-text">ARAS</span>
+        </a>
+        <nav class="main-nav" id="main-menu" aria-label="Navegación principal">
+            <ul>
+                <li><a href="./" class="active">Inicio</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#coleccion">Todos los productos</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons" aria-label="Acciones de cuenta y compra">
+            <button class="cart-icon" type="button" aria-label="Abrir bolsa de compras">
+                <span>Bolsa</span>
+                <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                <span id="cart-counter" aria-live="polite"></span>
+            </button>
+            <a class="account-button" href="mi-cuenta" aria-label="Mi cuenta">
+                <i class="fa-solid fa-user" aria-hidden="true"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-carousel" data-banner-carousel aria-label="Novedades de ARAS" hidden>
+            <div class="hero-carousel-track" data-banner-track aria-live="off"></div>
+            <div class="hero-carousel-controls" data-banner-controls hidden>
+                <button type="button" data-banner-prev aria-label="Banner anterior">‹</button>
+                <div class="hero-carousel-dots" data-banner-dots aria-label="Seleccionar banner"></div>
+                <button type="button" data-banner-next aria-label="Banner siguiente">›</button>
+            </div>
+        </section>
+
+        <section class="category-section" id="categorias" aria-labelledby="category-heading">
+            <div class="category-heading">
+                <span class="eyebrow">DESCUBRE ARAS</span>
+                <h1 id="category-heading">Encuentra tu estilo</h1>
+            </div>
+            <div class="search-container category-search">
+                <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+                <input type="search" id="search-bar" placeholder="Buscar por nombre..." aria-label="Buscar productos por nombre">
+            </div>
+            <div class="category-grid" aria-label="Explorar por categoría">
+                <button class="category-card category-card-all active" type="button" data-filter="all" aria-label="Ver todas las categorías" aria-pressed="true">
+                    <span class="category-collage" aria-hidden="true">
+                        <img src="api/imagen-producto.php?id=11111111111111111111111111111111" alt="" loading="lazy">
+                        <img src="api/imagen-producto.php?id=44444444444444444444444444444444" alt="" loading="lazy">
+                        <img src="api/imagen-producto.php?id=77777777777777777777777777777777" alt="" loading="lazy">
+                        <img src="api/imagen-producto.php?id=22222222222222222222222222222222" alt="" loading="lazy">
+                    </span>
+                    <span class="category-label">Todas</span>
+                </button>
+                <button class="category-card" type="button" data-filter="cuidado-personal" aria-label="Ver categoría cuidado personal">
+                    <img src="api/imagen-producto.php?id=11111111111111111111111111111111" alt="" loading="lazy">
+                    <span class="category-label">Cuidado personal</span>
+                </button>
+                <button class="category-card" type="button" data-filter="belleza" aria-label="Ver categoría belleza">
+                    <img src="api/imagen-producto.php?id=44444444444444444444444444444444" alt="" loading="lazy">
+                    <span class="category-label">Belleza</span>
+                </button>
+                <button class="category-card" type="button" data-filter="perfumeria" aria-label="Ver categoría perfumería">
+                    <img src="api/imagen-producto.php?id=77777777777777777777777777777777" alt="" loading="lazy">
+                    <span class="category-label">Perfumería</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="catalog-section container" id="coleccion" aria-labelledby="catalog-heading">
+            <div class="catalog-header">
+                <span class="eyebrow">COLECCIÓN ARAS</span>
+                <h2 id="catalog-heading">Cuidado personal, belleza y perfumería</h2>
+                <p>Descubre productos para consentirte y encontrar tus favoritos.</p>
+                <p class="demo-catalog-note">Catálogo de prueba: imágenes, nombres y precios son demostrativos; reemplázalos por los productos reales antes de vender.</p>
+            </div>
+            <div class="product-grid" data-product-grid="catalog" aria-live="polite">
+                <p class="catalog-empty">Cargando productos...</p>
+            </div>
+        </section>
+    </main>
+    
+    <div class="cart" id="cart">
+        <button id="cart-close" aria-label="Cerrar carrito" title="Cerrar carrito" class="cart-close">×</button>
+        <h3>Tu bolsa</h3>
+        <div class="cart-items" aria-live="polite"></div>
+        <div class="cart-summary">
+            <div class="wholesale-notice" id="wholesale-notice">
+                <i class="fa-solid fa-box-open"></i> Los pedidos grandes están sujetos a confirmación de disponibilidad
+            </div>
+            <div class="cart-row subtotal">Subtotal: <span id="cart-subtotal">$0</span></div>
+            <div class="delivery-preference">
+                <span id="delivery-preference-summary">Entrega en Medellín</span>
+                <button type="button" id="edit-delivery-preference">Cambiar</button>
+            </div>
+            <div class="cart-row shipping-fee">Costo envío: <span id="cart-shipping">$0</span></div>
+            <div class="cart-row total">Total: <strong id="cart-total">$0</strong></div>
+            <div class="cart-actions">
+                <button id="checkout-button" class="primary">Continuar con el domicilio</button>
+                <button id="clear-cart" type="button">Vaciar carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout-modal" id="delivery-preferences-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="delivery-preferences-title">
+        <div class="checkout-modal-content delivery-preferences-content" role="document">
+            <button id="delivery-preferences-close" aria-label="Cerrar opciones de envío" title="Cerrar">×</button>
+            <h4 id="delivery-preferences-title">Opciones de envío</h4>
+            <form id="delivery-preferences-form">
+                <label class="delivery-field-label" for="delivery-zone">Zona de entrega</label>
+                <select id="delivery-zone" class="delivery-zone-select">
+                    <option value="medellin">Medellín · $8.000</option>
+                    <option value="antioquia">Otro municipio de Antioquia · $14.000</option>
+                </select>
+                <div id="delivery-municipality-field" hidden>
+                    <label class="delivery-field-label" for="delivery-municipality">Municipio de entrega</label>
+                    <input id="delivery-municipality" class="delivery-municipality-input" type="text" maxlength="120" placeholder="Escribe el municipio" autocomplete="address-level2">
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" id="delivery-preferences-cancel">Cancelar</button>
+                    <button type="submit" class="primary">Guardar opciones</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="checkout-modal-content" role="document">
+            <button id="modal-close" aria-label="Cerrar formulario" title="Cerrar">×</button>
+            <h4>Detalles de envío</h4>
+            <form id="delivery-form">
+                <p class="delivery-location-summary" id="delivery-location-summary"></p>
+                <p class="payment-deadline-note">Después de crear el pedido tendrás 24 horas para pagar. Si el pago no se confirma, se cancelará automáticamente y no se descontará inventario.</p>
+                <label for="delivery-address">Dirección completa</label>
+                <input id="delivery-address" name="address" type="text" maxlength="255" placeholder="Ej. Calle 10 # 20-30, apto. 301" autocomplete="street-address" required>
+                <fieldset class="delivery-map-field">
+                    <legend>Confirma el punto de entrega</legend>
+                    <p>Al salir del campo de dirección, el mapa buscará el lugar automáticamente. Revisa el marcador y ajústalo si hace falta.</p>
+                    <div id="delivery-map" role="application" aria-label="Mapa para elegir el punto de entrega"></div>
+                    <button type="button" id="confirm-map-location">Confirmar ubicación</button>
+                    <span id="map-location-status" class="map-location-status" role="status" aria-live="polite">Escribe la dirección completa para ubicarla en el mapa.</span>
+                    <input type="hidden" id="delivery-latitude" name="latitude">
+                    <input type="hidden" id="delivery-longitude" name="longitude">
+                </fieldset>
+                <label for="contact-name">Nombre completo</label>
+                <input id="contact-name" name="name" type="text" placeholder="Nombre completo" required>
+                <label for="contact-phone">Número de celular</label>
+                <input id="contact-phone" name="phone" type="tel" placeholder="+57 300 0000000" required>
+                <div class="modal-buttons">
+                    <button type="button" id="modal-cancel">Cancelar</button>
+                    <button type="submit" class="primary">Crear pedido y pagar con Wompi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <span class="footer-brand">ARAS</span>
+                <p>Encuentra tu estilo.</p>
+            </div>
+            <div class="footer-column footer-legal">
+                <h2>Legal</h2>
+                <a href="politica-cookies">Política de cookies</a>
+                <a href="declaracion-privacidad">Declaración de privacidad</a>
+                <a href="creditos-imagenes">Créditos de imágenes</a>
+            </div>
+            <div class="footer-column">
+                <h2>Redes sociales</h2>
+                <div class="social-links" aria-label="Redes sociales ARAS">
+                    <a class="social-icon" href="https://www.instagram.com/arasoficial.co/" target="_blank" rel="noopener noreferrer" aria-label="Instagram ARAS" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <span class="social-icon is-pending" role="img" aria-label="TikTok pendiente" title="TikTok pendiente"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></span>
+                    <span class="social-icon is-pending" role="img" aria-label="WhatsApp pendiente" title="WhatsApp pendiente"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+                </div>
+            </div>
+            <div class="footer-column footer-payment">
+                <h2>Medios de pago</h2>
+                <span class="wompi-badge"><i class="fa-solid fa-lock"></i> Wompi</span>
+                <span class="footer-pending">Consulta las opciones disponibles al confirmar tu pedido.</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ARAS</p>
+            <p>Desarrollado por:
+                <a href="https://www.strokbig.com" target="_blank" rel="noopener noreferrer">
+                    <img src="img/Logos/Strokbig-Logo-II-[SF].png" alt="Logotipo de Strokbig" width="150">
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <aside class="cookie-notice" data-cookie-notice aria-label="Aviso de cookies" hidden>
+        <p>Esta tienda ARAS utiliza almacenamiento local para recordar tu preferencia y cookies técnicas para el panel administrativo.
+            Consulta nuestra
+            <a href="politica-cookies">política de cookies</a>
+            y nuestra
+            <a href="declaracion-privacidad">Declaración de privacidad</a>.
+        </p>
+        <button type="button" data-cookie-accept>Aceptar</button>
+    </aside>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="https://checkout.wompi.co/widget.js" defer></script>
+    <script src="scripts/inicio.js?v=27"></script>
+    <script src="scripts/banners.js?v=4"></script>
+    <script src="scripts/cookies.js?v=3"></script>
+</body>
+</html>
