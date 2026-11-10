@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5eee6"/>
+      <stop offset=".58" stop-color="#e8d9ca"/>
+      <stop offset="1" stop-color="#cbb9a6"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c9a987"/>
+      <stop offset="1" stop-color="#8f7157"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="560" fill="url(#bg)"/>
+  <path d="M1040 560c50-180 94-300 225-400 132 100 177 220 226 400Z" fill="#f8f3ed" opacity=".82"/>
+  <circle cx="1265" cy="260" r="215" fill="#ded0c1" opacity=".65"/>
+  <path d="m1218 145 47-64 48 64 62 55-36 52-31-21 65 249h-216l65-249-31 21-36-52Z" fill="url(#dress)"/>
+  <path d="M1242 147c4 46 39 69 91 0m-126 167c72 22 147 22 218 0m-200 65c59 18 119 18 179 0" fill="none" stroke="#eadbcc" stroke-width="5" opacity=".76"/>
+  <path d="M1090 126h9m-4-4v9m378 126h9m-4-4v9" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+  <text x="132" y="202" fill="#80674f" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="7">CADA MOMENTO</text>
+  <text x="124" y="314" fill="#30271f" font-family="Georgia, serif" font-size="82" font-weight="700">Un estilo</text>
+  <text x="124" y="400" fill="#30271f" font-family="Georgia, serif" font-size="82" font-weight="700">para ti.</text>
+  <path d="M132 440h190" stroke="#98775c" stroke-width="4" stroke-linecap="round"/>
+  <text x="132" y="484" fill="#59483a" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">ENCUENTRA TU FAVORITO</text>
+</svg>
