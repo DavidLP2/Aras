@@ -1,0 +1,445 @@
+[
+    {
+        "id": "11111111111111111111111111111111",
+        "name": "Gel limpiador facial de prueba",
+        "price": 18000,
+        "category": "cuidado-personal",
+        "stock": 20,
+        "image": "11111111111111111111111111111111.webp",
+        "images": [
+            "11111111111111111111111111111111.webp"
+        ],
+        "active": true,
+        "is_new": true,
+        "variants": []
+    },
+    {
+        "id": "22222222222222222222222222222222",
+        "name": "Crema hidratante de prueba",
+        "price": 24000,
+        "category": "cuidado-personal",
+        "stock": 20,
+        "image": "22222222222222222222222222222222.webp",
+        "images": [
+            "22222222222222222222222222222222.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "33333333333333333333333333333333",
+        "name": "Jabón corporal de prueba",
+        "price": 15000,
+        "category": "cuidado-personal",
+        "stock": 20,
+        "image": "33333333333333333333333333333333.webp",
+        "images": [
+            "33333333333333333333333333333333.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "44444444444444444444444444444444",
+        "name": "Set de brochas de maquillaje de prueba",
+        "price": 42000,
+        "category": "belleza",
+        "stock": 20,
+        "image": "44444444444444444444444444444444.webp",
+        "images": [
+            "44444444444444444444444444444444.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "55555555555555555555555555555555",
+        "name": "Brillo labial de prueba",
+        "price": 18000,
+        "category": "belleza",
+        "stock": 20,
+        "image": "55555555555555555555555555555555.webp",
+        "images": [
+            "55555555555555555555555555555555.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "66666666666666666666666666666666",
+        "name": "Kit de maquillaje de prueba",
+        "price": 52000,
+        "category": "belleza",
+        "stock": 20,
+        "image": "66666666666666666666666666666666.webp",
+        "images": [
+            "66666666666666666666666666666666.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "77777777777777777777777777777777",
+        "name": "Bruma floral de prueba",
+        "price": 29000,
+        "category": "perfumeria",
+        "stock": 20,
+        "image": "77777777777777777777777777777777.webp",
+        "images": [
+            "77777777777777777777777777777777.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "88888888888888888888888888888888",
+        "name": "Perfume cítrico de prueba",
+        "price": 65000,
+        "category": "perfumeria",
+        "stock": 20,
+        "image": "88888888888888888888888888888888.webp",
+        "images": [
+            "88888888888888888888888888888888.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "99999999999999999999999999999999",
+        "name": "Colonia fresca de prueba",
+        "price": 42000,
+        "category": "perfumeria",
+        "stock": 20,
+        "image": "99999999999999999999999999999999.webp",
+        "images": [
+            "99999999999999999999999999999999.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000001",
+        "name": "Champú nutritivo de prueba",
+        "price": 28000,
+        "category": "cuidado-personal",
+        "stock": 20,
+        "image": "00000000000000000000000000000001.webp",
+        "images": [
+            "00000000000000000000000000000001.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000002",
+        "name": "Champú hidratante de prueba",
+        "price": 32000,
+        "category": "cuidado-personal",
+        "stock": 20,
+        "image": "00000000000000000000000000000002.webp",
+        "images": [
+            "00000000000000000000000000000002.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000003",
+        "name": "Champú suave de uso diario de prueba",
+        "price": 26000,
+        "category": "cuidado-personal",
+        "stock": 20,
+        "image": "00000000000000000000000000000003.webp",
+        "images": [
+            "00000000000000000000000000000003.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000004",
+        "name": "Bálsamo labial natural de prueba",
+        "price": 12000,
+        "category": "cuidado-personal",
+        "stock": 20,
+        "image": "00000000000000000000000000000004.webp",
+        "images": [
+            "00000000000000000000000000000004.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000005",
+        "name": "Bálsamo labial reparador de prueba",
+        "price": 14000,
+        "category": "cuidado-personal",
+        "stock": 20,
+        "image": "00000000000000000000000000000005.webp",
+        "images": [
+            "00000000000000000000000000000005.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000006",
+        "name": "Jabón facial en crema de prueba",
+        "price": 16000,
+        "category": "cuidado-personal",
+        "stock": 20,
+        "image": "00000000000000000000000000000006.webp",
+        "images": [
+            "00000000000000000000000000000006.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000007",
+        "name": "Jabón hidratante de prueba",
+        "price": 18000,
+        "category": "cuidado-personal",
+        "stock": 20,
+        "image": "00000000000000000000000000000007.webp",
+        "images": [
+            "00000000000000000000000000000007.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000008",
+        "name": "Cosméticos esenciales de prueba",
+        "price": 48000,
+        "category": "belleza",
+        "stock": 20,
+        "image": "00000000000000000000000000000008.webp",
+        "images": [
+            "00000000000000000000000000000008.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000009",
+        "name": "Trío de labiales de prueba",
+        "price": 38000,
+        "category": "belleza",
+        "stock": 20,
+        "image": "00000000000000000000000000000009.webp",
+        "images": [
+            "00000000000000000000000000000009.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000010",
+        "name": "Sombra de ojos de colección de prueba",
+        "price": 28000,
+        "category": "belleza",
+        "stock": 20,
+        "image": "00000000000000000000000000000010.webp",
+        "images": [
+            "00000000000000000000000000000010.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000011",
+        "name": "Maquillaje de tonos cálidos de prueba",
+        "price": 46000,
+        "category": "belleza",
+        "stock": 20,
+        "image": "00000000000000000000000000000011.webp",
+        "images": [
+            "00000000000000000000000000000011.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000012",
+        "name": "Paleta de colores neutros de prueba",
+        "price": 44000,
+        "category": "belleza",
+        "stock": 20,
+        "image": "00000000000000000000000000000012.webp",
+        "images": [
+            "00000000000000000000000000000012.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000013",
+        "name": "Labial rosa de prueba",
+        "price": 22000,
+        "category": "belleza",
+        "stock": 20,
+        "image": "00000000000000000000000000000013.webp",
+        "images": [
+            "00000000000000000000000000000013.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000014",
+        "name": "Set de maquillaje de prueba",
+        "price": 56000,
+        "category": "belleza",
+        "stock": 20,
+        "image": "00000000000000000000000000000014.webp",
+        "images": [
+            "00000000000000000000000000000014.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000015",
+        "name": "Perfume floral de prueba",
+        "price": 65000,
+        "category": "perfumeria",
+        "stock": 20,
+        "image": "00000000000000000000000000000015.webp",
+        "images": [
+            "00000000000000000000000000000015.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000016",
+        "name": "Perfume amaderado de prueba",
+        "price": 89000,
+        "category": "perfumeria",
+        "stock": 20,
+        "image": "00000000000000000000000000000016.webp",
+        "images": [
+            "00000000000000000000000000000016.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000017",
+        "name": "Fragancias de colección de prueba",
+        "price": 110000,
+        "category": "perfumeria",
+        "stock": 20,
+        "image": "00000000000000000000000000000017.webp",
+        "images": [
+            "00000000000000000000000000000017.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000018",
+        "name": "Perfume clásico de prueba",
+        "price": 76000,
+        "category": "perfumeria",
+        "stock": 20,
+        "image": "00000000000000000000000000000018.webp",
+        "images": [
+            "00000000000000000000000000000018.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000019",
+        "name": "Perfume elegante de prueba",
+        "price": 82000,
+        "category": "perfumeria",
+        "stock": 20,
+        "image": "00000000000000000000000000000019.webp",
+        "images": [
+            "00000000000000000000000000000019.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000020",
+        "name": "Esencia ornamental de prueba",
+        "price": 95000,
+        "category": "perfumeria",
+        "stock": 20,
+        "image": "00000000000000000000000000000020.webp",
+        "images": [
+            "00000000000000000000000000000020.webp"
+        ],
+        "active": false,
+        "is_new": true,
+        "variants": []
+    },
+    {
+        "id": "00000000000000000000000000000021",
+        "name": "Perfume de notas verdes de prueba",
+        "price": 78000,
+        "category": "perfumeria",
+        "stock": 20,
+        "image": "00000000000000000000000000000021.webp",
+        "images": [
+            "00000000000000000000000000000021.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "1bb6cadaac8faf7675ca0bbbf7e6c9e5",
+        "name": "Ali David Lamar",
+        "price": 50000,
+        "category": "memoria",
+        "stock": 0,
+        "image": "8074fab050c8282c71b82430c87e584e.webp",
+        "images": [
+            "8074fab050c8282c71b82430c87e584e.webp"
+        ],
+        "active": true,
+        "is_new": true,
+        "variants": [
+            {
+                "name": "Tamaño",
+                "options": [
+                    {
+                        "label": "100 ML"
+                    }
+                ]
+            }
+        ]
+    }
+]

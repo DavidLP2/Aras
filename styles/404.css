@@ -1,0 +1,158 @@
+:root {
+    color-scheme: light;
+    font-family: "Poppins", sans-serif;
+    color: #28231f;
+    background: #faf8f5;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background:
+        radial-gradient(ellipse at 13% 15%, rgba(231, 215, 199, .55), transparent 32rem),
+        radial-gradient(ellipse at 88% 82%, rgba(246, 238, 230, .9), transparent 30rem),
+        linear-gradient(145deg, #fcfaf7, #f5f0ea);
+}
+
+a { color: inherit; }
+
+.error-page {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: clamp(24px, 6vw, 72px) 20px;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: clamp(24px, 4vh, 42px);
+    color: #28231f;
+    font-size: clamp(1.25rem, 4vw, 1.65rem);
+    font-weight: 700;
+    letter-spacing: -.05em;
+    text-decoration: none;
+}
+
+.brand-moon { color: #90745f; font-size: 1.7em; line-height: .8; }
+
+.error-card {
+    position: relative;
+    isolation: isolate;
+    width: min(100%, 740px);
+    overflow: hidden;
+    padding: clamp(34px, 7vw, 68px);
+    border: 1px solid #e7dfd6;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, .92);
+    box-shadow: 0 24px 80px rgba(40, 35, 31, .08);
+    text-align: center;
+}
+
+.error-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin: 0 0 2px;
+    color: #90745f;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+}
+
+.error-code span { width: 7px; height: 7px; border-radius: 50%; background: #b49a82; }
+
+.error-number {
+    margin: 0;
+    color: #f2ede7;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(7rem, 24vw, 12rem);
+    font-weight: 400;
+    letter-spacing: -.09em;
+    line-height: .98;
+}
+
+h1 {
+    max-width: 590px;
+    margin: 8px auto 0;
+    color: #28231f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 600;
+    letter-spacing: -.04em;
+    line-height: 1.15;
+}
+
+.error-copy {
+    max-width: 480px;
+    margin: 18px auto 0;
+    color: #6b625b;
+    font-size: clamp(.95rem, 2.5vw, 1.05rem);
+    line-height: 1.75;
+}
+
+.error-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.button-primary, .button-secondary {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 21px;
+    border: 1px solid #5b4637;
+    border-radius: 3px;
+    font-size: .94rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.button-primary { gap: 12px; background: #5b4637; color: #fff; }
+.button-primary span { font-size: 1.2rem; transition: transform .2s ease; }
+.button-primary:hover { background: #90745f; border-color: #90745f; transform: translateY(-2px); }
+.button-primary:hover span { transform: translateX(3px); }
+.button-secondary { background: #fff; color: #5b4637; }
+.button-secondary:hover { background: #f6f2ed; transform: translateY(-2px); }
+
+.error-help {
+    margin: 28px 0 0;
+    color: #6b625b;
+    font-size: .87rem;
+    line-height: 1.7;
+}
+
+.error-help a { color: #5b4637; font-weight: 600; text-underline-offset: 3px; }
+.page-footer { display: flex; align-items: center; gap: 8px; margin: 26px 0 0; color: #766d7d; font-size: .78rem; letter-spacing: .08em; text-align: center; }
+.page-footer span:first-child { color: #90745f; }
+
+:focus-visible { outline: 3px solid #b9a18b; outline-offset: 4px; }
+
+@media (max-width: 480px) {
+    .error-page { justify-content: flex-start; padding: 30px 16px 24px; }
+    .brand { margin: 8px 0 32px; }
+    .error-card { padding: 34px 20px 30px; }
+    .error-number { font-size: clamp(7rem, 35vw, 10rem); }
+    .error-actions { flex-direction: column; }
+    .button-primary, .button-secondary { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
