@@ -1,0 +1,7 @@
+/storage/database.php
+/storage/database.local.php
+/storage/database.production.php
+/storage/mail.smtp.php
+/storage/wompi.local.php
+/storage/wompi.production.php
+/vendor/

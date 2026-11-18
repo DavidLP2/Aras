@@ -1,0 +1,23 @@
+ErrorDocument 404 /404.html
+
+Options -MultiViews
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html(?:[?\s]) [NC]
+RewriteRule ^index\.html$ /%1 [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+((?:[^?\s]+/)*admin/)index\.php(?:[?\s]) [NC]
+RewriteRule ^admin/index\.php$ /%1 [R=301,L,NE]
+RewriteCond %{REQUEST_URI} ^(.*/admin/mi-cuenta)/$
+RewriteRule ^admin/mi-cuenta/$ %1 [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+([^?\s]+)\.(?:html|php)(?:[?\s]) [NC]
+RewriteRule ^.+\.(?:html|php)$ /%1 [R=301,L,NE]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]

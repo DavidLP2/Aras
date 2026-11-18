@@ -1,0 +1,12 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^node --check \"scripts\\\\inicio\\.js\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php -r '\\$value = ''sample app password''; \\$normalized = preg_replace\\(''/\\\\s\\+/'', '''', \\$value\\); if \\(\\$normalized !== ''sampleapppassword''\\) \\{ fwrite\\(STDERR, \"Normalization failed\\\\n\"\\); exit\\(1\\); \\} echo \"SMTP password whitespace normalization passed\\\\n\";'$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
