@@ -1,445 +1,4594 @@
 [
     {
-        "id": "11111111111111111111111111111111",
-        "name": "Gel limpiador facial de prueba",
-        "price": 18000,
-        "category": "cuidado-personal",
-        "stock": 20,
-        "image": "11111111111111111111111111111111.webp",
-        "images": [
-            "11111111111111111111111111111111.webp"
-        ],
-        "active": true,
-        "is_new": true,
-        "variants": []
-    },
-    {
-        "id": "22222222222222222222222222222222",
-        "name": "Crema hidratante de prueba",
-        "price": 24000,
-        "category": "cuidado-personal",
-        "stock": 20,
-        "image": "22222222222222222222222222222222.webp",
-        "images": [
-            "22222222222222222222222222222222.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "33333333333333333333333333333333",
-        "name": "Jabón corporal de prueba",
-        "price": 15000,
-        "category": "cuidado-personal",
-        "stock": 20,
-        "image": "33333333333333333333333333333333.webp",
-        "images": [
-            "33333333333333333333333333333333.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "44444444444444444444444444444444",
-        "name": "Set de brochas de maquillaje de prueba",
-        "price": 42000,
-        "category": "belleza",
-        "stock": 20,
-        "image": "44444444444444444444444444444444.webp",
-        "images": [
-            "44444444444444444444444444444444.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "55555555555555555555555555555555",
-        "name": "Brillo labial de prueba",
-        "price": 18000,
-        "category": "belleza",
-        "stock": 20,
-        "image": "55555555555555555555555555555555.webp",
-        "images": [
-            "55555555555555555555555555555555.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "66666666666666666666666666666666",
-        "name": "Kit de maquillaje de prueba",
-        "price": 52000,
-        "category": "belleza",
-        "stock": 20,
-        "image": "66666666666666666666666666666666.webp",
-        "images": [
-            "66666666666666666666666666666666.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "77777777777777777777777777777777",
-        "name": "Bruma floral de prueba",
-        "price": 29000,
+        "id": "5d0716a7018c2f5ce41cdc14637b003f",
+        "name": "Afnan 9 PM Elixir",
+        "price": 281000,
         "category": "perfumeria",
-        "stock": 20,
-        "image": "77777777777777777777777777777777.webp",
-        "images": [
-            "77777777777777777777777777777777.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "88888888888888888888888888888888",
-        "name": "Perfume cítrico de prueba",
-        "price": 65000,
-        "category": "perfumeria",
-        "stock": 20,
-        "image": "88888888888888888888888888888888.webp",
-        "images": [
-            "88888888888888888888888888888888.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "99999999999999999999999999999999",
-        "name": "Colonia fresca de prueba",
-        "price": 42000,
-        "category": "perfumeria",
-        "stock": 20,
-        "image": "99999999999999999999999999999999.webp",
-        "images": [
-            "99999999999999999999999999999999.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000001",
-        "name": "Champú nutritivo de prueba",
-        "price": 28000,
-        "category": "cuidado-personal",
-        "stock": 20,
-        "image": "00000000000000000000000000000001.webp",
-        "images": [
-            "00000000000000000000000000000001.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000002",
-        "name": "Champú hidratante de prueba",
-        "price": 32000,
-        "category": "cuidado-personal",
-        "stock": 20,
-        "image": "00000000000000000000000000000002.webp",
-        "images": [
-            "00000000000000000000000000000002.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000003",
-        "name": "Champú suave de uso diario de prueba",
-        "price": 26000,
-        "category": "cuidado-personal",
-        "stock": 20,
-        "image": "00000000000000000000000000000003.webp",
-        "images": [
-            "00000000000000000000000000000003.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000004",
-        "name": "Bálsamo labial natural de prueba",
-        "price": 12000,
-        "category": "cuidado-personal",
-        "stock": 20,
-        "image": "00000000000000000000000000000004.webp",
-        "images": [
-            "00000000000000000000000000000004.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000005",
-        "name": "Bálsamo labial reparador de prueba",
-        "price": 14000,
-        "category": "cuidado-personal",
-        "stock": 20,
-        "image": "00000000000000000000000000000005.webp",
-        "images": [
-            "00000000000000000000000000000005.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000006",
-        "name": "Jabón facial en crema de prueba",
-        "price": 16000,
-        "category": "cuidado-personal",
-        "stock": 20,
-        "image": "00000000000000000000000000000006.webp",
-        "images": [
-            "00000000000000000000000000000006.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000007",
-        "name": "Jabón hidratante de prueba",
-        "price": 18000,
-        "category": "cuidado-personal",
-        "stock": 20,
-        "image": "00000000000000000000000000000007.webp",
-        "images": [
-            "00000000000000000000000000000007.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000008",
-        "name": "Cosméticos esenciales de prueba",
-        "price": 48000,
-        "category": "belleza",
-        "stock": 20,
-        "image": "00000000000000000000000000000008.webp",
-        "images": [
-            "00000000000000000000000000000008.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000009",
-        "name": "Trío de labiales de prueba",
-        "price": 38000,
-        "category": "belleza",
-        "stock": 20,
-        "image": "00000000000000000000000000000009.webp",
-        "images": [
-            "00000000000000000000000000000009.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000010",
-        "name": "Sombra de ojos de colección de prueba",
-        "price": 28000,
-        "category": "belleza",
-        "stock": 20,
-        "image": "00000000000000000000000000000010.webp",
-        "images": [
-            "00000000000000000000000000000010.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000011",
-        "name": "Maquillaje de tonos cálidos de prueba",
-        "price": 46000,
-        "category": "belleza",
-        "stock": 20,
-        "image": "00000000000000000000000000000011.webp",
-        "images": [
-            "00000000000000000000000000000011.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000012",
-        "name": "Paleta de colores neutros de prueba",
-        "price": 44000,
-        "category": "belleza",
-        "stock": 20,
-        "image": "00000000000000000000000000000012.webp",
-        "images": [
-            "00000000000000000000000000000012.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000013",
-        "name": "Labial rosa de prueba",
-        "price": 22000,
-        "category": "belleza",
-        "stock": 20,
-        "image": "00000000000000000000000000000013.webp",
-        "images": [
-            "00000000000000000000000000000013.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000014",
-        "name": "Set de maquillaje de prueba",
-        "price": 56000,
-        "category": "belleza",
-        "stock": 20,
-        "image": "00000000000000000000000000000014.webp",
-        "images": [
-            "00000000000000000000000000000014.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000015",
-        "name": "Perfume floral de prueba",
-        "price": 65000,
-        "category": "perfumeria",
-        "stock": 20,
-        "image": "00000000000000000000000000000015.webp",
-        "images": [
-            "00000000000000000000000000000015.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000016",
-        "name": "Perfume amaderado de prueba",
-        "price": 89000,
-        "category": "perfumeria",
-        "stock": 20,
-        "image": "00000000000000000000000000000016.webp",
-        "images": [
-            "00000000000000000000000000000016.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000017",
-        "name": "Fragancias de colección de prueba",
-        "price": 110000,
-        "category": "perfumeria",
-        "stock": 20,
-        "image": "00000000000000000000000000000017.webp",
-        "images": [
-            "00000000000000000000000000000017.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000018",
-        "name": "Perfume clásico de prueba",
-        "price": 76000,
-        "category": "perfumeria",
-        "stock": 20,
-        "image": "00000000000000000000000000000018.webp",
-        "images": [
-            "00000000000000000000000000000018.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000019",
-        "name": "Perfume elegante de prueba",
-        "price": 82000,
-        "category": "perfumeria",
-        "stock": 20,
-        "image": "00000000000000000000000000000019.webp",
-        "images": [
-            "00000000000000000000000000000019.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000020",
-        "name": "Esencia ornamental de prueba",
-        "price": 95000,
-        "category": "perfumeria",
-        "stock": 20,
-        "image": "00000000000000000000000000000020.webp",
-        "images": [
-            "00000000000000000000000000000020.webp"
-        ],
-        "active": false,
-        "is_new": true,
-        "variants": []
-    },
-    {
-        "id": "00000000000000000000000000000021",
-        "name": "Perfume de notas verdes de prueba",
-        "price": 78000,
-        "category": "perfumeria",
-        "stock": 20,
-        "image": "00000000000000000000000000000021.webp",
-        "images": [
-            "00000000000000000000000000000021.webp"
-        ],
-        "active": true,
-        "is_new": false,
-        "variants": []
-    },
-    {
-        "id": "1bb6cadaac8faf7675ca0bbbf7e6c9e5",
-        "name": "Ali David Lamar",
-        "price": 50000,
-        "category": "memoria",
         "stock": 0,
-        "image": "8074fab050c8282c71b82430c87e584e.webp",
+        "image": "3de2ab69d59a69aa329d3f525c1f3f46.webp",
         "images": [
-            "8074fab050c8282c71b82430c87e584e.webp"
+            "3de2ab69d59a69aa329d3f525c1f3f46.webp"
         ],
         "active": true,
-        "is_new": true,
-        "variants": [
-            {
-                "name": "Tamaño",
-                "options": [
-                    {
-                        "label": "100 ML"
-                    }
-                ]
-            }
-        ]
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "7c251d0daee7106e38b5e7c2671fcc9e",
+        "name": "Afnan 9 PM Night Out",
+        "price": 360000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "e91e9d532c94a8e9c2681c63fee8e26b.webp",
+        "images": [
+            "e91e9d532c94a8e9c2681c63fee8e26b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9e547cb4b5c860fba3cebd639dc8741c",
+        "name": "Afnan 9 PM Pour Femme EDP",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "1347dcaf2c83df07c03700c9705685b1.webp",
+        "images": [
+            "1347dcaf2c83df07c03700c9705685b1.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "0615f52f6038d99910069cd8a84f0728",
+        "name": "Afnan 9PM Eau de Parfum",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5be0f49cf65cadd9429a9c416a113403.webp",
+        "images": [
+            "5be0f49cf65cadd9429a9c416a113403.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "7e74ff9ef4528d415be3b98230cb5092",
+        "name": "Afnan 9PM Rebel Eau de Parfum",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "56cbc2f2afdd8d3957dc5e87745ca3e1.webp",
+        "images": [
+            "56cbc2f2afdd8d3957dc5e87745ca3e1.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "75ec2c06ad12e0d3ccc93f55caf4e975",
+        "name": "Ahli Corvus Eau de Parfum",
+        "price": 400000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "28bbf0d4ea7dc5dcc6991cb23022e58f.webp",
+        "images": [
+            "28bbf0d4ea7dc5dcc6991cb23022e58f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "cee2d640370e894515f2eae9cb668970",
+        "name": "Ahli Octans Eau de Parfum",
+        "price": 400000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c6c1d1ce3bf5866fb4ba156763239ac4.webp",
+        "images": [
+            "c6c1d1ce3bf5866fb4ba156763239ac4.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "01aac326ac581c2c0361ceaa69bacb65",
+        "name": "Ahli Vega Eau de Parfum",
+        "price": 400000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "bbc0dec4cbed9ee6e48bbb9538fdb583.webp",
+        "images": [
+            "bbc0dec4cbed9ee6e48bbb9538fdb583.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "7f941e081ec25e811fc6bd7255e6baf3",
+        "name": "Al Haramain Amber Oud Aqua Dubai",
+        "price": 415000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "8eb41a64f448906fa407de756291f23c.webp",
+        "images": [
+            "8eb41a64f448906fa407de756291f23c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f2f96b82dd08e370ec693ac05fa4fac0",
+        "name": "Al Haramain Amber Oud Dubai Night",
+        "price": 359000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f6ca3685c0d2e6eb00f5f18a4cffd2a6.webp",
+        "images": [
+            "f6ca3685c0d2e6eb00f5f18a4cffd2a6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e168af0ebd1fb587fe721d3cd429b938",
+        "name": "Al Haramain Amber Oud Eau de Parfum",
+        "price": 400000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d538a07afe50e92b4f6a3eb9a34aeaa8.webp",
+        "images": [
+            "d538a07afe50e92b4f6a3eb9a34aeaa8.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "0a44b925de69d1edad7c3422709f4b5a",
+        "name": "Al Haramain Amber Oud Gold Edition",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "25f33102305fcb404770c054a48234c4.webp",
+        "images": [
+            "25f33102305fcb404770c054a48234c4.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "85aa89756390814cd81b061dff7ff43f",
+        "name": "Al haramain amber oud gold edition 999.9",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "39f9fb3fdc19f922f3eefdc7cf9ee45b.webp",
+        "images": [
+            "39f9fb3fdc19f922f3eefdc7cf9ee45b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "20234113ae156ba846683cfa8b39cb67",
+        "name": "Al Haramain Amber Oud Gold Edition Extreme",
+        "price": 410000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0bf1f0c7d90ad5f411b0d29e3fea2813.webp",
+        "images": [
+            "0bf1f0c7d90ad5f411b0d29e3fea2813.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8b7f5311806ae2fba9094dec2ad27c5e",
+        "name": "Al Haramain Detour noir",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c494c71a1a4e8524e9dc8606f3606d4f.webp",
+        "images": [
+            "c494c71a1a4e8524e9dc8606f3606d4f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a810ffe5018f3dfb23b77f1fce8400ad",
+        "name": "Al Haramain L'Aventure",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "e697c347f449232a400c4d8916bf1d2f.webp",
+        "images": [
+            "e697c347f449232a400c4d8916bf1d2f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9bb566ad510cff697a3e6da62f076d84",
+        "name": "Al Haramain L'Aventure Blanche",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "4e680ce6fcffe00c459e82000c1e3a57.webp",
+        "images": [
+            "4e680ce6fcffe00c459e82000c1e3a57.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "b49f07a9f7601e9925be87df2995b559",
+        "name": "Al Haramain L'Aventure Femme",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b0d6efdda07310b41521b8f73c8608f6.webp",
+        "images": [
+            "b0d6efdda07310b41521b8f73c8608f6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "74de4caa4d55232d7c8f9df7db8b3a90",
+        "name": "Al Haramain L?Aventure Rose",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0ea810e634694c01feed7fb2614ffac6.webp",
+        "images": [
+            "0ea810e634694c01feed7fb2614ffac6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "c98ff9af25fb6025c28de96d56808791",
+        "name": "Ariana Grande Cloud 2.0 Intense Eau de Parfum",
+        "price": 400000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "2555d88d93a54cd9bbaee96ebc53bd95.webp",
+        "images": [
+            "2555d88d93a54cd9bbaee96ebc53bd95.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "34b9d5e01b9359a4493debdbd4600fc3",
+        "name": "Ariana Grande Cloud Eau de Parfum",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3efa127976dbc9e46fe23a93b7addacf.webp",
+        "images": [
+            "3efa127976dbc9e46fe23a93b7addacf.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "3473510bc5880050b911a13fe519ce63",
+        "name": "Ariana Grande Cloud Pink Eau de Parfum",
+        "price": 349000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5bea8d3cc04ef344ac2554049eba6084.webp",
+        "images": [
+            "5bea8d3cc04ef344ac2554049eba6084.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "2ed56d2b85758632e2bfd1037b207fd3",
+        "name": "Ariana Grande God Is A Woman Eau de Parfum",
+        "price": 269000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "6a9b18ee642050ee618a78b1604a5b97.webp",
+        "images": [
+            "6a9b18ee642050ee618a78b1604a5b97.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "52dfa2729aaa9c27d9e9befca6fcd038",
+        "name": "Ariana Grande Mod Blush Eau de Parfum",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "347b7f8f860b4ea47250c2f887ff6e92.webp",
+        "images": [
+            "347b7f8f860b4ea47250c2f887ff6e92.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "7de3d45a6b7bbf45a3ecd1b62be799b2",
+        "name": "Ariana Grande Mod Vanilla Eau de Parfum",
+        "price": 349000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "68ffd98a6afc9127fd70a7ad605e2c2e.webp",
+        "images": [
+            "68ffd98a6afc9127fd70a7ad605e2c2e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8bbe90a87870b3b7c245deb6b2cb071b",
+        "name": "Ariana Grande R.E.M. Eau de Parfum",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5970a313aa5e930d0982ac41b2b3cf1e.webp",
+        "images": [
+            "5970a313aa5e930d0982ac41b2b3cf1e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "147d28d3bc052c41eae4b4ab20d4a41a",
+        "name": "Ariana Grande Sweet Like Candy Eau de Parfum",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0080120a66b076fca29c28c86604fa5b.webp",
+        "images": [
+            "0080120a66b076fca29c28c86604fa5b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "2185de833a3d0b05415754214aa8b5e9",
+        "name": "Ariana Grande Thank U, Next 2.0 Eau de Parfum",
+        "price": 319000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "4ad42db0d154fe5095841fd1b41dc56f.webp",
+        "images": [
+            "4ad42db0d154fe5095841fd1b41dc56f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "fbab46648275f86ae48b59e9cc8d3c24",
+        "name": "Ariana Grande Thank U, Next Eau de Parfum",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ec25a8ab46c95f6be0478deb0184c1c2.webp",
+        "images": [
+            "ec25a8ab46c95f6be0478deb0184c1c2.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6f9cf4f4df476728fcace580c7d4b069",
+        "name": "Armaf Club de Nuit Iconic",
+        "price": 280000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "1fad4f75fbc8c4dda97690a6c5c78b04.webp",
+        "images": [
+            "1fad4f75fbc8c4dda97690a6c5c78b04.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8569eca84d7204bae8d9a2029474906c",
+        "name": "Armaf Club De Nuit Imperiale",
+        "price": 239000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "aff633299f63356d465ad899ad32b7f1.webp",
+        "images": [
+            "aff633299f63356d465ad899ad32b7f1.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "29c1121e54dd896bfd42fa4734e98096",
+        "name": "Armaf Club de Nuit Intense Man Eau de Parfum",
+        "price": 370000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f9e79c4edc3437da939dc7f153d24149.webp",
+        "images": [
+            "f9e79c4edc3437da939dc7f153d24149.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "29119be072d32c9c883512c474bff4ec",
+        "name": "Armaf Club De Nuit Intense Man EDT",
+        "price": 210000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "e624f5ccd1f041ede99f7714622c115b.webp",
+        "images": [
+            "e624f5ccd1f041ede99f7714622c115b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "38786af3eae5378d9cefa01875995220",
+        "name": "Armaf club de nuit Maleka",
+        "price": 249000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "1d795c55e35f4235eb34c5f2e1132390.webp",
+        "images": [
+            "1d795c55e35f4235eb34c5f2e1132390.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "63c0a39cdaef223539770b9641ce9708",
+        "name": "Armaf Club de Nuit Milestone",
+        "price": 239000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "df2e72451bf16087a43f4a23e3f7019d.webp",
+        "images": [
+            "df2e72451bf16087a43f4a23e3f7019d.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a616ec9522826568e5edae1fe0be8652",
+        "name": "Armaf Club de Nuit Oud",
+        "price": 370000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "1d29427eb196255ac52e35db877a8e23.webp",
+        "images": [
+            "1d29427eb196255ac52e35db877a8e23.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "37d087cf30723ffe9542d97f0f59ca74",
+        "name": "Armaf Club de Nuit Precieux 1",
+        "price": 344000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "abbec680e3a5d3b4a63bcc3c3edb5cad.webp",
+        "images": [
+            "abbec680e3a5d3b4a63bcc3c3edb5cad.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "0434b6bcc3946310561e8fd3f171b6a4",
+        "name": "Armaf Club de Nuit Sillage",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "29c7e62178495cc69bccd4dfa12119a7.webp",
+        "images": [
+            "29c7e62178495cc69bccd4dfa12119a7.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "c0d09c22612238167a5ff4ed66916cf0",
+        "name": "Armaf Club de Nuit Untold Eau de Parfum",
+        "price": 280000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3838164cf712cfb262b5b7b86b40383a.webp",
+        "images": [
+            "3838164cf712cfb262b5b7b86b40383a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8531c1072ef6558158e2cc74a42c2b45",
+        "name": "Armaf Club De Nuit Urban Man Elixir",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "181aa0ba1cbb7941a58c70f3b71b4223.webp",
+        "images": [
+            "181aa0ba1cbb7941a58c70f3b71b4223.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9ede5d8d6d81930eaafd833b0bd5504e",
+        "name": "Armaf Club de Nuit Woman",
+        "price": 209000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "6fe15c71602a0dd952a035001260239c.webp",
+        "images": [
+            "6fe15c71602a0dd952a035001260239c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "b2ac49fc92d41af7c650d673bc863012",
+        "name": "Armaf Island Breeze Eau de Parfum",
+        "price": 300000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "99c9644f331be6f6b9621d3bda9b25e7.webp",
+        "images": [
+            "99c9644f331be6f6b9621d3bda9b25e7.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "084240ae4ad10dd18512d08711c6f0df",
+        "name": "Armaf Mandarin Sky Eau de Parfum",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "1bb13099d07b52be1d1779d5a4685c43.webp",
+        "images": [
+            "1bb13099d07b52be1d1779d5a4685c43.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "c50c58e9629262a2c136db1647417fed",
+        "name": "Armaf Odyssey Aqua Edition",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f454be32e45ee210e69bc7c2199cfa47.webp",
+        "images": [
+            "f454be32e45ee210e69bc7c2199cfa47.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "45dcecafcdd1643f96873bf709d96ea0",
+        "name": "Armaf Odyssey Artisto",
+        "price": 260000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "4b2b7deb35cb65e2dc28cbd9af4c45c4.webp",
+        "images": [
+            "4b2b7deb35cb65e2dc28cbd9af4c45c4.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6e9b762461886ee6217dfe8c6d2fde17",
+        "name": "Armaf Odyssey bahamas tropical",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a33491a97d2868f61bc875abb22156ea.webp",
+        "images": [
+            "a33491a97d2868f61bc875abb22156ea.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "16daac4195bd0b8ba99a58d7d5c7b819",
+        "name": "Armaf odyssey candee",
+        "price": 189000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "31a9251d03b997be6f0c4f797b86da12.webp",
+        "images": [
+            "31a9251d03b997be6f0c4f797b86da12.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6c0a7eb24d5231d0d43294ce6d91a5a3",
+        "name": "Armaf Odyssey Dubai Chocolat",
+        "price": 218000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "08aabbbfa406a196116b1053bcacf21e.webp",
+        "images": [
+            "08aabbbfa406a196116b1053bcacf21e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "710900d640b6ab7e436417c8f39822cb",
+        "name": "Armaf Odyssey Homme",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f969b8aa1743025398eea6bf6bdbb2e1.webp",
+        "images": [
+            "f969b8aa1743025398eea6bf6bdbb2e1.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "78dbd12967f9d0e5a8e62d7106def131",
+        "name": "Armaf Odyssey Homme White Edition",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0c9e9c0100def16d017875dc5ca8dd9d.webp",
+        "images": [
+            "0c9e9c0100def16d017875dc5ca8dd9d.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e2f487d2db1e2750ce76bd420dc9a87b",
+        "name": "Armaf odyssey limoni",
+        "price": 179000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "822fc70138686d02ac0e49db6be78105.webp",
+        "images": [
+            "822fc70138686d02ac0e49db6be78105.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "0dff5d755e4e8a2411851d164953741c",
+        "name": "Armaf Odyssey Mandarin Sky Elixir",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "de951fc9fba5408ba97f2bd37cf52ac0.webp",
+        "images": [
+            "de951fc9fba5408ba97f2bd37cf52ac0.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "23525c8e71c25a9107839cf68f592c95",
+        "name": "Armaf Odyssey Mega",
+        "price": 210000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "6162bae20756b69564254df8795fb95d.webp",
+        "images": [
+            "6162bae20756b69564254df8795fb95d.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "342dde7b3e26146ad3e558c19427f06f",
+        "name": "Armaf Yum Yum Eau de Parfum",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "480145405b40b01eb4fd8a49a09090d9.webp",
+        "images": [
+            "480145405b40b01eb4fd8a49a09090d9.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "c8152cc5968772e385d6cce844fcb72f",
+        "name": "Armani Code Eau de Toilette",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "47c43d27a1ea990c84333101377031ba.webp",
+        "images": [
+            "47c43d27a1ea990c84333101377031ba.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "eabbf6470c26be2f328cc5f851d11cc3",
+        "name": "Armani Si Eau de Parfum",
+        "price": 610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "6ce471c5db2f4f17a697153abec68544.webp",
+        "images": [
+            "6ce471c5db2f4f17a697153abec68544.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5d4a882035a35167bcfb21506233bb4d",
+        "name": "Azzaro Wanted Eau de Toilette",
+        "price": 260000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7e4c3e773612677853d947d811c83e7f.webp",
+        "images": [
+            "7e4c3e773612677853d947d811c83e7f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "c941111635844b32cbd709a6e1f2b7aa",
+        "name": "Bharara King Eau de Parfum",
+        "price": 325000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "6db7e6eb20cca25cd2e657ae58973ca9.webp",
+        "images": [
+            "6db7e6eb20cca25cd2e657ae58973ca9.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f0203a4bc65dd4f815e94fedbee10e9a",
+        "name": "Bharara King Parfum",
+        "price": 430000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "74a8ce2f17c7efef97bb55f08d716cf7.webp",
+        "images": [
+            "74a8ce2f17c7efef97bb55f08d716cf7.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a1d8c183c83cc4b8b76b4a3924655387",
+        "name": "Bharara King Soleil",
+        "price": 375000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c60895ceef6f40af9c20365cd1219d27.webp",
+        "images": [
+            "c60895ceef6f40af9c20365cd1219d27.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ccf50a4515ba5ca3da2cead1d33fd4a2",
+        "name": "Bharara mast perfume Rome Paradox",
+        "price": 249000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "28081193a16511837bce57bd38afd08c.webp",
+        "images": [
+            "28081193a16511837bce57bd38afd08c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "3d8a138d28d3881f569a2ccc56f6a246",
+        "name": "Bharara mast perfume rome pour femme",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "54a1480cb7e5686a1cd39207bdcca3b4.webp",
+        "images": [
+            "54a1480cb7e5686a1cd39207bdcca3b4.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9b55853ba1b22895f9797465d1224578",
+        "name": "Bharara mast perfume rome pour homme",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "14b0ad11daa5bb541d0f23b5080817b6.webp",
+        "images": [
+            "14b0ad11daa5bb541d0f23b5080817b6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "454afb13eafd8d6967fdcd240d054001",
+        "name": "Bharara Mast Perfume Velvet Rose",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "6fc93f2cb39763606b62f9dfb257f063.webp",
+        "images": [
+            "6fc93f2cb39763606b62f9dfb257f063.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "abd1903a6741ae6a9d34ecee456208d6",
+        "name": "Bharara Niche Femme",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "685a52da0e6f96a521be5382d6d8cae7.webp",
+        "images": [
+            "685a52da0e6f96a521be5382d6d8cae7.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f8e69dbeb164050f635953801db8cecc",
+        "name": "Bharara Queen",
+        "price": 370000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "aca0e93cd6385e2f7a8c7a94a3aefe8e.webp",
+        "images": [
+            "aca0e93cd6385e2f7a8c7a94a3aefe8e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ce8a4279af4c1e41b92583488aa9d0b7",
+        "name": "Bharara Rose",
+        "price": 410000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5bfc0e2f038f88e7e2786f3736591c12.webp",
+        "images": [
+            "5bfc0e2f038f88e7e2786f3736591c12.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "1cd1a7573bc80f04d49f3eed2163f2f9",
+        "name": "Billie Eilish Eilish Eau de Parfum",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "940f6a1e865bbe09b4eae1668acef8d8.webp",
+        "images": [
+            "940f6a1e865bbe09b4eae1668acef8d8.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a80fb7b86f3c3ba3b153029f25e0477a",
+        "name": "Bond No. 9 Bleecker Street Eau de Parfum",
+        "price": 1370000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "9e3c7a7d87cec66081ab5e2a295c3da1.webp",
+        "images": [
+            "9e3c7a7d87cec66081ab5e2a295c3da1.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6764e4a27ca240976623eded746c408b",
+        "name": "Bond No. 9 Tribeca Eau de Parfum",
+        "price": 1370000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ce1e8c614e78804c3b615d2d967f67ce.webp",
+        "images": [
+            "ce1e8c614e78804c3b615d2d967f67ce.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "3941db509e042e74d1c99d1c6bae24f5",
+        "name": "Britney Spears Fantasy Eau de Parfum",
+        "price": 180000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d66e62b57c18a37d09aceef26fe78869.webp",
+        "images": [
+            "d66e62b57c18a37d09aceef26fe78869.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "34b3aa704ac98598eaacc5ff50f14297",
+        "name": "Burberry Brit Eau de Toilette",
+        "price": 249000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5fd6cecc03000c40229694a938fae945.webp",
+        "images": [
+            "5fd6cecc03000c40229694a938fae945.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "53d0bffbb1e6a6403d73893265a0f87d",
+        "name": "Burberry Goddess Eau de Parfum",
+        "price": 469000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0577946e17075ef1d2066a2b480c429a.webp",
+        "images": [
+            "0577946e17075ef1d2066a2b480c429a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f770acce05fd58598f419f57bc8ecd60",
+        "name": "Burberry Goddess Eau de Parfum Intense",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7f0fcb2f0dff62003d60a31b2a949390.webp",
+        "images": [
+            "7f0fcb2f0dff62003d60a31b2a949390.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "41d64922726c1f351454dd9910739e2a",
+        "name": "Burberry Her Eau de Parfum",
+        "price": 570000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "deba5a80694ee92f121824cce4545b79.webp",
+        "images": [
+            "deba5a80694ee92f121824cce4545b79.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "d5b677c49f74d8cd1b8d12520f2d9110",
+        "name": "Burberry Hero Eau de Parfum",
+        "price": 460000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "355866a2ea1c1b6f9ba1e8e99f7eeea3.webp",
+        "images": [
+            "355866a2ea1c1b6f9ba1e8e99f7eeea3.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a5905044e54f88f0a2dfad7302caf8a6",
+        "name": "Bvlgari Aqva Pour Homme Eau de Toilette",
+        "price": 550000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "58025368fadb49bf5c1c76f610105d34.webp",
+        "images": [
+            "58025368fadb49bf5c1c76f610105d34.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5901bab8da123f1f74bad537ba2a8b58",
+        "name": "Bvlgari Man In Black Eau de Parfum",
+        "price": 530000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "50a66a1dedc2af8d559b81f927c529cf.webp",
+        "images": [
+            "50a66a1dedc2af8d559b81f927c529cf.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "64211a209114e1554e3505f5c4f29432",
+        "name": "Bvlgari Man Wood Essence Eau de Parfum",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b8a821119a078212416a85afb364eb7f.webp",
+        "images": [
+            "b8a821119a078212416a85afb364eb7f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "b11ca8c27d7abc7bd4e8607b872574b4",
+        "name": "Bvlgari Omnia Amethyste Eau de Toilette",
+        "price": 540000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "07e7e75eba4654ed851ec22b6af8d16f.webp",
+        "images": [
+            "07e7e75eba4654ed851ec22b6af8d16f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5b1c44ae250c56680d1b049d0d36014c",
+        "name": "Bvlgari Omnia Coral Eau de Toilette",
+        "price": 540000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "bbc72ed4e56cddf74e3f7e0e1d6f2e2b.webp",
+        "images": [
+            "bbc72ed4e56cddf74e3f7e0e1d6f2e2b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "cbd1f3c0446d871e8fdf2b8490eed4a4",
+        "name": "Bvlgari Omnia Crystalline Eau de Toilette",
+        "price": 540000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "18968ff34005f027ba2f132f12e606fe.webp",
+        "images": [
+            "18968ff34005f027ba2f132f12e606fe.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "3973d6a80155fe2c72c1f83288be4129",
+        "name": "By Kilian Angels' Share Eau de Parfum",
+        "price": 1870000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b698426cd19a1bae6dfc2a401d6a0e0e.webp",
+        "images": [
+            "b698426cd19a1bae6dfc2a401d6a0e0e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ad8ff8c4c0d0ac92aee99dc77e857abb",
+        "name": "By Kilian Apple Brandy On The Rocks Eau de Parfum",
+        "price": 1470000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "930321f3f8f22e1fecb0bdc4f2e7c445.webp",
+        "images": [
+            "930321f3f8f22e1fecb0bdc4f2e7c445.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8934b65a88f5225fa9b6f84f5c27817d",
+        "name": "By Kilian Love Don't Be Shy Eau de Parfum",
+        "price": 1310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ac1f5877e1872799788242df58bd5c3a.webp",
+        "images": [
+            "ac1f5877e1872799788242df58bd5c3a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9168c8b9c30a1ddb7997cf51357d2924",
+        "name": "Byredo Bal D'Afrique Eau de Parfum",
+        "price": 1210000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7ad034b20cfc91ddd51f161e908d851e.webp",
+        "images": [
+            "7ad034b20cfc91ddd51f161e908d851e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "99247b356cdc74e483932901c6d01feb",
+        "name": "Calvin Klein CK One Eau de Toilette",
+        "price": 190000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f955ce33be20eb52003a6350295b623c.webp",
+        "images": [
+            "f955ce33be20eb52003a6350295b623c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "cae1dda6f7f4d1b8b8e1f271f08289c4",
+        "name": "Calvin Klein Eternity Eau de Toilette",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "001d57057908e69c0b57a76b5a6260db.webp",
+        "images": [
+            "001d57057908e69c0b57a76b5a6260db.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "013a208476f7ba69fa2966317bedaf5f",
+        "name": "Calvin Klein Euphoria Eau de Parfum",
+        "price": 300000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ffde254adc7b970b9b41b84b5605fd6d.webp",
+        "images": [
+            "ffde254adc7b970b9b41b84b5605fd6d.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "138d93fc7464dded9c7d85d10efb3168",
+        "name": "Carolina Herrera 212 Heroes Eau de Toilette",
+        "price": 430000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3f3ded265f0ebe9e51b00f2cd3746fd0.webp",
+        "images": [
+            "3f3ded265f0ebe9e51b00f2cd3746fd0.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "56c0602b8d425c8f96962e93df2cccd6",
+        "name": "Carolina Herrera 212 Men NYC Eau de Toilette",
+        "price": 430000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "912a9c8878b03f20c0db312682e5ea4b.webp",
+        "images": [
+            "912a9c8878b03f20c0db312682e5ea4b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "953d7b53bbd39fab8a3a8357806a1ef4",
+        "name": "Carolina Herrera 212 VIP Eau de Parfum",
+        "price": 469000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "57b80f2d1ba1117375cf063b00a28a4b.webp",
+        "images": [
+            "57b80f2d1ba1117375cf063b00a28a4b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "fe4690e79b2719480e89306e25fc0721",
+        "name": "Carolina Herrera CH Men Eau de Toilette",
+        "price": 430000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "19a19924063e3477ec1f32bbaa158cb6.webp",
+        "images": [
+            "19a19924063e3477ec1f32bbaa158cb6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ec37fdc14d11eb1481e0796c46ab6712",
+        "name": "Carolina Herrera Good Girl Blush Eau de Parfum",
+        "price": 580000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3b7db31e99f1f20aaa09575a43626ba4.webp",
+        "images": [
+            "3b7db31e99f1f20aaa09575a43626ba4.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "14f330cbfbc3f47c1509db6b78af902e",
+        "name": "Carolina Herrera Good Girl Blush Elixir Eau de Parfum",
+        "price": 610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "6e20d755a25df238357ec4ac69472072.webp",
+        "images": [
+            "6e20d755a25df238357ec4ac69472072.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "7be8df674866abef10a4be9bcd864ca2",
+        "name": "Carolina Herrera Good Girl Eau de Parfum",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "4e7c931fcc54373bd9c89037336ccb76.webp",
+        "images": [
+            "4e7c931fcc54373bd9c89037336ccb76.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "317b57936ed05fd3acc50de53e9128a8",
+        "name": "Carolina Herrera Very Good Girl Eau de Parfum",
+        "price": 570000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "efac638445597833164be0a3f365dc56.webp",
+        "images": [
+            "efac638445597833164be0a3f365dc56.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "babfe0180d8e2a048651f6429066c7bd",
+        "name": "Chanel Allure Homme Sport Eau de Toilette",
+        "price": 810000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0f25e4245458bd7f78be79b090999394.webp",
+        "images": [
+            "0f25e4245458bd7f78be79b090999394.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "63f7beb206913f78295e8611ff1e4eec",
+        "name": "Chanel Bleu de Chanel Eau de Parfum",
+        "price": 950000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "dbbf6c887494da4b25c4fe319bd303ac.webp",
+        "images": [
+            "dbbf6c887494da4b25c4fe319bd303ac.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e7111f1bb86b0732d8f903fd5259a6e4",
+        "name": "Chanel Chance Eau Tendre Eau de Parfum",
+        "price": 870000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "980b5f4b1550e305a01de46c39534b44.webp",
+        "images": [
+            "980b5f4b1550e305a01de46c39534b44.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9fdf5d120683a6edb66d85b9eb881876",
+        "name": "Chanel Coco Mademoiselle Eau de Parfum",
+        "price": 1010000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "576272be9bc35e0b4b40cbce72606818.webp",
+        "images": [
+            "576272be9bc35e0b4b40cbce72606818.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ee1badab1ab9469f4cee47a9c8bbaf53",
+        "name": "Chanel No. 5 Eau de Parfum",
+        "price": 870000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "2b08d3f726171028c19cb3ef9e70a8d3.webp",
+        "images": [
+            "2b08d3f726171028c19cb3ef9e70a8d3.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f6aacb99c9fc3eb4bb0a0e60fb54e361",
+        "name": "Chloé Eau de Parfum",
+        "price": 560000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "e3cb42b52453c92f79db08327599217e.webp",
+        "images": [
+            "e3cb42b52453c92f79db08327599217e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5b24d765d98fba533f2b38b0b9fae9b0",
+        "name": "Coach Floral Eau de Parfum",
+        "price": 300000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "606fe7b9fac0ab4ec08b8c6bf7a2424c.webp",
+        "images": [
+            "606fe7b9fac0ab4ec08b8c6bf7a2424c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "69f2a2ddb962cd679427ab4de732cfc0",
+        "name": "Creed Aventus Eau de Parfum",
+        "price": 1610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "42045bd3985851626fda9d46852a0f53.webp",
+        "images": [
+            "42045bd3985851626fda9d46852a0f53.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "cf2cc0c4987e4547b04bf2b5329a970a",
+        "name": "Creed Millésime Impérial Eau de Parfum",
+        "price": 1310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a4d663509307ed34a5de067f8a3037f6.webp",
+        "images": [
+            "a4d663509307ed34a5de067f8a3037f6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "b68bc1e10b044817fab810d8619495de",
+        "name": "Creed Silver Mountain Water Eau de Parfum",
+        "price": 1310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "2813e6cfc3e6e4031e77a0998adc2794.webp",
+        "images": [
+            "2813e6cfc3e6e4031e77a0998adc2794.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5a5af4cc71e61475a45c7716a40ebc9e",
+        "name": "Diesel Only The Brave Eau de Toilette",
+        "price": 299000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "13ea8dc77e95604125893743273d3d64.webp",
+        "images": [
+            "13ea8dc77e95604125893743273d3d64.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8e27e7803a587506e55f8289cea60cfe",
+        "name": "Dior Fahrenheit Eau de Toilette",
+        "price": 610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f4d17cd3f991d41f79e25fb4da25ee01.webp",
+        "images": [
+            "f4d17cd3f991d41f79e25fb4da25ee01.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f46d257641344661304a8e326738c0fe",
+        "name": "Dior Homme Intense Eau de Parfum",
+        "price": 710000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "278aa9a184bace2d4fe4f140121b2287.webp",
+        "images": [
+            "278aa9a184bace2d4fe4f140121b2287.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "fe9e7950e95d42936e084e71fe4b9b7c",
+        "name": "Dior Hypnotic Poison Eau de Parfum",
+        "price": 710000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3febfe9f224a6054894d4649860fc4e5.webp",
+        "images": [
+            "3febfe9f224a6054894d4649860fc4e5.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5575f622fbb673834d227f9be6ae0bc1",
+        "name": "Dior J'adore Eau de Parfum",
+        "price": 870000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3ac760517f92eacbedb4236fa1df6823.webp",
+        "images": [
+            "3ac760517f92eacbedb4236fa1df6823.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "586fa8489792a5cf03c277a265f7ee87",
+        "name": "Dior Poison Girl Eau de Parfum",
+        "price": 750000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "fe150566993104f71dbffc42a1c7b8a9.webp",
+        "images": [
+            "fe150566993104f71dbffc42a1c7b8a9.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e07b410a2a1578da58cbac16b78648f0",
+        "name": "Dior Sauvage Eau de Parfum",
+        "price": 700000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5088c624c80c71b3655fb23c2478db2d.webp",
+        "images": [
+            "5088c624c80c71b3655fb23c2478db2d.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "917119b5b99e0a2b2f908e3db86b040c",
+        "name": "Dior Sauvage Elixir Eau de Parfum",
+        "price": 1170000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "42411ccc536bfde794ba93081945bdd7.webp",
+        "images": [
+            "42411ccc536bfde794ba93081945bdd7.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "67d435f4c6d41aae92b95500b16615a1",
+        "name": "DKNY Be Delicious Eau de Parfum",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "509c9117c6a04327c0d287299005f258.webp",
+        "images": [
+            "509c9117c6a04327c0d287299005f258.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5068e448d2195a35936583fac510b07e",
+        "name": "Dolce & Gabbana Devotion Eau de Parfum",
+        "price": 470000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "abd8cec151db6f63775f6874b61583fd.webp",
+        "images": [
+            "abd8cec151db6f63775f6874b61583fd.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a6ad6534ee352e9eca249176309b7d5f",
+        "name": "Dolce & Gabbana K Eau de Toilette",
+        "price": 469000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "53a674d1b52c28d30ed627e1461cd4bd.webp",
+        "images": [
+            "53a674d1b52c28d30ed627e1461cd4bd.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ab4faa2135f7764234a2bec791351c81",
+        "name": "Dolce & Gabbana Light Blue Eau de Toilette",
+        "price": 419000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b0847e6143d707026241fbf274d4affd.webp",
+        "images": [
+            "b0847e6143d707026241fbf274d4affd.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "11c1064a8fcf34166f7489fb2762f3cf",
+        "name": "Dolce & Gabbana Light Blue Pour Homme Eau de Toilette",
+        "price": 360000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "fa5148469b7a9d26e5ba17079d32bacb.webp",
+        "images": [
+            "fa5148469b7a9d26e5ba17079d32bacb.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "bc4d747d015606b0b271df488b693698",
+        "name": "Dolce & Gabbana Light Blue Summer Vibes Eau de Toilette",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "2b68599b42c5580b01f6bf6928c1db0f.webp",
+        "images": [
+            "2b68599b42c5580b01f6bf6928c1db0f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "1f70e835a24a27f4f259cbabe26a1de7",
+        "name": "Dolce & Gabbana Q by Dolce & Gabbana Eau de Parfum",
+        "price": 410000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "8a5cff13af80838722eab19ac6d793bf.webp",
+        "images": [
+            "8a5cff13af80838722eab19ac6d793bf.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "3174d80fe82a596e8e4f58bf06456102",
+        "name": "Dolce & Gabbana The One Eau de Toilette",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d6c0d1225f1708787cb93ed7810594eb.webp",
+        "images": [
+            "d6c0d1225f1708787cb93ed7810594eb.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "daada4f17e242b2f5df217665010f342",
+        "name": "Dolce & Gabbana Velvet Infusion Eau de Parfum",
+        "price": 1310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "cbbb481585a3b30ee65f450e9b079718.webp",
+        "images": [
+            "cbbb481585a3b30ee65f450e9b079718.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ff302afa492336edf12dc83e7e7eba17",
+        "name": "Dumont Nitro Red Eau de Parfum",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "6d34ad18ea1f6b818544a32938d2a56c.webp",
+        "images": [
+            "6d34ad18ea1f6b818544a32938d2a56c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "3ec3bddec6ab08f25be8fbafca48267f",
+        "name": "Emporio Armani Because It's You Eau de Parfum",
+        "price": 410000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c5b2d56597689c851549eef243fd9427.webp",
+        "images": [
+            "c5b2d56597689c851549eef243fd9427.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8aacd37b03c2fc2dcb1214aa8344afe8",
+        "name": "Emporio Armani Stronger With You Eau de Toilette",
+        "price": 450000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "eb366f45dae6907120671cd3ec023858.webp",
+        "images": [
+            "eb366f45dae6907120671cd3ec023858.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "30265049f969eda50096d08ece2d3881",
+        "name": "French Avenue Venus de Milo Eau de Parfum",
+        "price": 280000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b4be2e6c5f935a6a36b79963688b1b66.webp",
+        "images": [
+            "b4be2e6c5f935a6a36b79963688b1b66.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ae02a60f9001591f977f7c65551cb85b",
+        "name": "French Avenue Vulcan Feu Eau de Parfum",
+        "price": 300000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "32171069f23365ccaabe23c3874b5c81.webp",
+        "images": [
+            "32171069f23365ccaabe23c3874b5c81.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e7db019f62c1be916c9dee1a88725a03",
+        "name": "French Avenue Vulcan Sable Eau de Parfum",
+        "price": 280000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c246d57a4aa33d30993ea8a0e5b40fa2.webp",
+        "images": [
+            "c246d57a4aa33d30993ea8a0e5b40fa2.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "1efee4a68af9b57f4225ec1c24ef43d3",
+        "name": "Game Of Spades All In",
+        "price": 418000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ef2954986d14f30564c7b5f0f946e0c1.webp",
+        "images": [
+            "ef2954986d14f30564c7b5f0f946e0c1.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "230ec054552c051e7995c49e67e7bc10",
+        "name": "Game of Spades BID Jo Milano (Alternativa Santal 33)",
+        "price": 418000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b12d5510f5324b4abb424b1d11f9eaa3.webp",
+        "images": [
+            "b12d5510f5324b4abb424b1d11f9eaa3.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "7ee74f650dd2b66243e8bc1120d63de5",
+        "name": "Game of Spades High Roller",
+        "price": 418000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d907563455865ecd7bb6bd607304ec48.webp",
+        "images": [
+            "d907563455865ecd7bb6bd607304ec48.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "3d1062cf63df50f5918298c76e336c09",
+        "name": "Game of Spades Win Jo Milano",
+        "price": 418000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "75092dda56fba48bf23705e5b7b47ab7.webp",
+        "images": [
+            "75092dda56fba48bf23705e5b7b47ab7.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f0662ef927379aae82bae158da23e21e",
+        "name": "Giardini Di Toscana Bianco Latte Eau de Parfum",
+        "price": 970000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c7ea957114cd268409e4e42abd694a1c.webp",
+        "images": [
+            "c7ea957114cd268409e4e42abd694a1c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "7b85b9e7692e73d6d243522dd1478026",
+        "name": "Giorgio Armani Acqua di Giò Eau de Toilette",
+        "price": 430000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "9dcc9b18222f734bbcaf96e5511f8cc9.webp",
+        "images": [
+            "9dcc9b18222f734bbcaf96e5511f8cc9.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8910acf7c6ca34869b4a77537f61d1f8",
+        "name": "Giorgio Armani Acqua di Giò Profondo Eau de Parfum",
+        "price": 610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "119281585768543fa386d40dc8b134ef.webp",
+        "images": [
+            "119281585768543fa386d40dc8b134ef.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "21fabae29c6e85a66ff0c770885f39f8",
+        "name": "Gucci Bloom Eau de Parfum",
+        "price": 470000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d03ee591efb177392355d9b2c35e0b22.webp",
+        "images": [
+            "d03ee591efb177392355d9b2c35e0b22.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "0dc5138a1942ceb5d730801470fb49f4",
+        "name": "Gucci Flora Gorgeous Gardenia Eau de Parfum",
+        "price": 515000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "8f96802b49923fc9d3ada76a1c40dc1b.webp",
+        "images": [
+            "8f96802b49923fc9d3ada76a1c40dc1b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "b6a8b1c24ecd676514920b0d46285331",
+        "name": "Gucci Guilty Eau de Parfum",
+        "price": 450000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "40c7116e09a8953a48e3994bf7a7897f.webp",
+        "images": [
+            "40c7116e09a8953a48e3994bf7a7897f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00cc4aea8c40a9a1a6db5b5d714d7cf1",
+        "name": "Guerlain Mon Guerlain Eau de Parfum",
+        "price": 450000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7242c22b238e3d3a0b27d1a12c6107f8.webp",
+        "images": [
+            "7242c22b238e3d3a0b27d1a12c6107f8.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "1ec2d311cf49595b3b37afe844e624d4",
+        "name": "Guerlain Shalimar Eau de Parfum",
+        "price": 560000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c1b7123d49b98a2afe94ec783555d144.webp",
+        "images": [
+            "c1b7123d49b98a2afe94ec783555d144.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "cc28d540761217ffedbacda6f3fa0e99",
+        "name": "Hermès Terre d'Hermès Eau de Toilette",
+        "price": 440000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "9c33efd9c6c5a062a57e241a7c17204f.webp",
+        "images": [
+            "9c33efd9c6c5a062a57e241a7c17204f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "d9148cfb4e8771f16f8405ed406d5937",
+        "name": "Hugo Boss Bottled Eau de Toilette",
+        "price": 315000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "e0d21904c5deb0aef583967acbe4c57e.webp",
+        "images": [
+            "e0d21904c5deb0aef583967acbe4c57e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "bd3e428eef8b87b5be8e08e949aad580",
+        "name": "Hugo Boss Hugo Just Different Eau de Toilette",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "39526798d371002363be73976fcb7d6d.webp",
+        "images": [
+            "39526798d371002363be73976fcb7d6d.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e923eed7724f698c122c8027c3a1a11a",
+        "name": "Ilmin Femme Eau de Parfum",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "810f96d200b461cc8eee6f81787e9375.webp",
+        "images": [
+            "810f96d200b461cc8eee6f81787e9375.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "10cde3eb4b85f4bf176ba4c8bf2218d9",
+        "name": "Ilmin Il Arte",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "97edfa57e028c307d49ffbcdff5b7d2c.webp",
+        "images": [
+            "97edfa57e028c307d49ffbcdff5b7d2c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9d16588498e877316ff0004ffcfd350a",
+        "name": "Ilmin Il Dolce",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "e3a067b4185b29569face2c715417bb6.webp",
+        "images": [
+            "e3a067b4185b29569face2c715417bb6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e3a89b3ab8f2d4c2ea56ae4bdadb71e1",
+        "name": "Ilmin Il Ego",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a7283678feecec6fcf996ed6d32b9366.webp",
+        "images": [
+            "a7283678feecec6fcf996ed6d32b9366.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "27a303b454e5b36c9fdad60919bd3730",
+        "name": "Ilmin Il Érotique",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a7964f3f34646cfd497c53584696638f.webp",
+        "images": [
+            "a7964f3f34646cfd497c53584696638f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "05973cfd821a882db1e63b2a42442406",
+        "name": "Ilmin Il Magnificent",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "bb636fe612f788cc3733f44e5710825f.webp",
+        "images": [
+            "bb636fe612f788cc3733f44e5710825f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "d45ed939edc1073664abf54cb0c0d5ba",
+        "name": "Ilmin Il Mexico",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "2749b5bdf6a15f1eb9e1cd7a4f7e7648.webp",
+        "images": [
+            "2749b5bdf6a15f1eb9e1cd7a4f7e7648.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "63ab639da0eec77deb835708978b7ac9",
+        "name": "Ilmin Il Navissi",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5bf26c395d6d48f494e80f659ba7a589.webp",
+        "images": [
+            "5bf26c395d6d48f494e80f659ba7a589.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00664dea5bced8217c14f81efceefbbd",
+        "name": "Ilmin Il Oomph",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "611622c68f87a49705896ceed69bbbee.webp",
+        "images": [
+            "611622c68f87a49705896ceed69bbbee.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "34ffcc9d313a041847ce1e659b1c93a0",
+        "name": "Ilmin Il Orgasme",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d0bb02495594c29f91dc4c9732dafcd2.webp",
+        "images": [
+            "d0bb02495594c29f91dc4c9732dafcd2.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "732853f00165546df12787e7f6f30efd",
+        "name": "Ilmin Il Rü",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b1f8ff00e5511b121fd92deab69107c5.webp",
+        "images": [
+            "b1f8ff00e5511b121fd92deab69107c5.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "98a7c4dcb28f68d79d049f2df36e4d05",
+        "name": "Ilmin Il Sativa",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "112f960164f04b150910124d9cccfd2b.webp",
+        "images": [
+            "112f960164f04b150910124d9cccfd2b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "bdf7b6366d07dd04d9782fc01aa00561",
+        "name": "Ilmin Il Sexuel",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3ea1b1fd0e2dddc50030d85710b5d207.webp",
+        "images": [
+            "3ea1b1fd0e2dddc50030d85710b5d207.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "87e8d7b0ea7a505f5989f9794dc9e783",
+        "name": "Ilmin Kakuno Eau de Parfum",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f9fc6ad2454f11d4ad73e3ae2f8f237b.webp",
+        "images": [
+            "f9fc6ad2454f11d4ad73e3ae2f8f237b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6b00600919e7ca819f3f9b8285b3d285",
+        "name": "Ilmin Monastery II",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0a03cd3f7f7571e256fa7a213ed4d6fd.webp",
+        "images": [
+            "0a03cd3f7f7571e256fa7a213ed4d6fd.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6b58bd9d817446dc4da26c1d33edbab7",
+        "name": "Ilmin Monastery III",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "fbbd41365b1fff989aebfe36d1ad7ea9.webp",
+        "images": [
+            "fbbd41365b1fff989aebfe36d1ad7ea9.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "537993faa7afca0414dea49197ea02ea",
+        "name": "Ilmin Roso Eau de Parfum",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3da0661403ed8a88cdee9ec25d7d1bae.webp",
+        "images": [
+            "3da0661403ed8a88cdee9ec25d7d1bae.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "d3a20b2feb82edf2e4bc1ff8ccc79273",
+        "name": "Initio Oud For Greatness Eau de Parfum",
+        "price": 1370000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c179c7200231f74871ee7a92b2ebb103.webp",
+        "images": [
+            "c179c7200231f74871ee7a92b2ebb103.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "c0d15d224bf02c02b79ed5d696dc50e5",
+        "name": "Issey Miyake L'Eau d'Issey Eau de Toilette",
+        "price": 308000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "67d37d59881d52b721ba6c2839860f8a.webp",
+        "images": [
+            "67d37d59881d52b721ba6c2839860f8a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ac33d4fb7268e222687726a91285da51",
+        "name": "Issey Miyake Le Sel d'Issey Eau de Parfum",
+        "price": 430000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "4a325f8b89de2ea8e9af21a793db8236.webp",
+        "images": [
+            "4a325f8b89de2ea8e9af21a793db8236.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "2036c1ba1a786aa3aaf0495a990898b0",
+        "name": "Issey Miyake Pour Homme Eau de Toilette",
+        "price": 300000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5393165c9895aa49985665fc84f573a7.webp",
+        "images": [
+            "5393165c9895aa49985665fc84f573a7.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "14868dad9dfa7f7f11919fff5635d5c4",
+        "name": "Jean Paul Gaultier Le Beau Eau de Toilette",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5074b56073fdd3f6deff5302a5d6e70e.webp",
+        "images": [
+            "5074b56073fdd3f6deff5302a5d6e70e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "dd521c629788c89efd3e7394729453f6",
+        "name": "Jean Paul Gaultier Le Male Eau de Toilette",
+        "price": 430000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "07d24fe64da6e6294c3c0dc109b8b8e4.webp",
+        "images": [
+            "07d24fe64da6e6294c3c0dc109b8b8e4.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6081b50156144df9787b3adde11eb8eb",
+        "name": "Jean Paul Gaultier Le Male Elixir Parfum",
+        "price": 530000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f1912371ea0b43970ca33e343125044b.webp",
+        "images": [
+            "f1912371ea0b43970ca33e343125044b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "17491fc50d133b671d19d2d15d43c8c7",
+        "name": "Jean Paul Gaultier Le Male Le Parfum Eau de Parfum",
+        "price": 530000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "05b03da54cbb79810a3c407ca9b6190d.webp",
+        "images": [
+            "05b03da54cbb79810a3c407ca9b6190d.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "c2672f5d1ee0e11b3fcc64db757703a7",
+        "name": "Jean Paul Gaultier Scandal Absolu Parfum Concentré",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "694583867d0c6cc3df2366f24879d0e6.webp",
+        "images": [
+            "694583867d0c6cc3df2366f24879d0e6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5ed2aad91f126940f8b6c2ec5d8dc059",
+        "name": "Jean Paul Gaultier Scandal Eau de Parfum",
+        "price": 449000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "10a63558742712a4b20a13bb67bb51bd.webp",
+        "images": [
+            "10a63558742712a4b20a13bb67bb51bd.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "3101e501c257445da5f76df2f3358a5b",
+        "name": "Jean Paul Gaultier Scandal Le Parfum Eau de Parfum Intense",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "e707e6e1fb2662e8dda5e745ff523719.webp",
+        "images": [
+            "e707e6e1fb2662e8dda5e745ff523719.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f430f11e324b0ee8e54accdef1039577",
+        "name": "Jimmy Choo I Want Choo Eau de Parfum",
+        "price": 410000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "9599c945f00de7baa4bc0e4d35d0116b.webp",
+        "images": [
+            "9599c945f00de7baa4bc0e4d35d0116b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a65d399f2c986ef8e99fc355311f0ee8",
+        "name": "Jimmy Choo Man Eau de Toilette",
+        "price": 380000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "8e4eec043dfc5c7572c3ad57b3bf3422.webp",
+        "images": [
+            "8e4eec043dfc5c7572c3ad57b3bf3422.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "b0664c4ddaeead30cfe4c6429d6733af",
+        "name": "Jo Milano Game of Spades Boston",
+        "price": 418000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "147acc92e4d879314b49ed7576c3e948.webp",
+        "images": [
+            "147acc92e4d879314b49ed7576c3e948.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "7a2bbbce7bd2952d6e70a9add8ddc059",
+        "name": "Jo Milano Game Of Spades full house",
+        "price": 430000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b1ba51ddb966949c6de5235fb59f5cf9.webp",
+        "images": [
+            "b1ba51ddb966949c6de5235fb59f5cf9.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "910974202815557755be52a63a42de71",
+        "name": "Jo Milano Game of Spades Moon",
+        "price": 418000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "69619239814beaeee06fcc29e15078d0.webp",
+        "images": [
+            "69619239814beaeee06fcc29e15078d0.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "0ef3d146a8af8985fd614bf48addbee5",
+        "name": "Jo Milano Game of Spades Opal",
+        "price": 430000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "8375455cafbd6a5e3350af674ed553fc.webp",
+        "images": [
+            "8375455cafbd6a5e3350af674ed553fc.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "00141f1a68a958c6681cb3e5e5d8c0d4",
+        "name": "Jo Milano Game of Spades Platinum",
+        "price": 418000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "da0cb3d5ed29b0ef2fec1b5c09871589.webp",
+        "images": [
+            "da0cb3d5ed29b0ef2fec1b5c09871589.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "80690e9c25e5489e18925f7703566866",
+        "name": "Jo Milano Game Of Spades Queen",
+        "price": 418000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "18e2436a9ab3ba6965df8ba73998abf1.webp",
+        "images": [
+            "18e2436a9ab3ba6965df8ba73998abf1.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "0805306c779d454e75d172b7a752cbc3",
+        "name": "Jo Milano Game Of Spades Royale Eau de Parfum",
+        "price": 419000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "4a84d33ea4e0cc35ff9f20237a97aabc.webp",
+        "images": [
+            "4a84d33ea4e0cc35ff9f20237a97aabc.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a94d8ab7d99bbb5d87dcdb8a6547df83",
+        "name": "Jo Milano Game Of Spades Wildcard Eau de Parfum",
+        "price": 418000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0ffd57926d9e413cd8b84164e814c684.webp",
+        "images": [
+            "0ffd57926d9e413cd8b84164e814c684.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "4380a7698481015bc2aa2cff54c35c5d",
+        "name": "Kayali Vanilla 28 Eau de Parfum",
+        "price": 870000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ee33b1028fb273ffa61d102a91d7ae1b.webp",
+        "images": [
+            "ee33b1028fb273ffa61d102a91d7ae1b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "dcf60bc5f56575ddce221af5fa4d69fa",
+        "name": "Lacoste Eau de Lacoste Pour Elle Eau de Parfum",
+        "price": 281000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "319bea3e259d751f5a85e6470c0539df.webp",
+        "images": [
+            "319bea3e259d751f5a85e6470c0539df.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "bc8deb92bd710d65612a7bde62057413",
+        "name": "Lacoste Essential Eau de Toilette",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "95e8e35afd9ba225a1b1716685703480.webp",
+        "images": [
+            "95e8e35afd9ba225a1b1716685703480.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "64d704474a7783084676eb20d85349eb",
+        "name": "Lacoste L.12.12 Blanc Eau de Toilette",
+        "price": 280000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "81b27f1831bcff3a24751fbf3f04207a.webp",
+        "images": [
+            "81b27f1831bcff3a24751fbf3f04207a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "fcfe521d62eaa866230009c968c2b41d",
+        "name": "Lacoste Touch Of Pink Eau de Toilette",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "39d7e78af25bce2ae8178e34cb1c8260.webp",
+        "images": [
+            "39d7e78af25bce2ae8178e34cb1c8260.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a8813510d5ee9b6bba66657ac65bc3f5",
+        "name": "Lancôme La Vie Est Belle Eau de Parfum",
+        "price": 570000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a732b9ae21b6634d2395943565d2cc73.webp",
+        "images": [
+            "a732b9ae21b6634d2395943565d2cc73.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "cba57bfb96c4b0b3ee4441f0f32dd0c4",
+        "name": "Lancome Tresor Eau de Parfum",
+        "price": 515000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "856a49f33c51d40a2f185ae3e13c7737.webp",
+        "images": [
+            "856a49f33c51d40a2f185ae3e13c7737.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "abee4127a8b8b92150f8743678ef0219",
+        "name": "Lattafa Ana Abiyedh Eau de Parfum",
+        "price": 169000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7fa18ef35c29c7ce10413aa9db2f5c1b.webp",
+        "images": [
+            "7fa18ef35c29c7ce10413aa9db2f5c1b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "17cb952a9bef77775e04f6ccbcf1750f",
+        "name": "Lattafa Angham",
+        "price": 239000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f0a0cf609d5d22325d01d1cea4e5f331.webp",
+        "images": [
+            "f0a0cf609d5d22325d01d1cea4e5f331.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ffd72d3dc57a56ad2df3ccc7c2a6ed5e",
+        "name": "Lattafa Art Of Universe Eau de Parfum",
+        "price": 300000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b847b1a6ac04edd76b36ee41302ed8fa.webp",
+        "images": [
+            "b847b1a6ac04edd76b36ee41302ed8fa.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "42de4e24cfe0dfaf21a86be64a14443d",
+        "name": "Lattafa Asad Bourbon Eau de Parfum",
+        "price": 239000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d5ea64c63ef94b98e28c48b15a43030f.webp",
+        "images": [
+            "d5ea64c63ef94b98e28c48b15a43030f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f82a7797c5d86ef755b49820154345be",
+        "name": "Lattafa Asad Eau de Parfum",
+        "price": 210000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "80f5c805c372ea7682545f0cc548f19a.webp",
+        "images": [
+            "80f5c805c372ea7682545f0cc548f19a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "2b9a079c135e319aaffedcc14c3d5d5b",
+        "name": "Lattafa Asad Elixir Eau de Parfum",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "e8effa33fea2c0e2eb47889553925309.webp",
+        "images": [
+            "e8effa33fea2c0e2eb47889553925309.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f7bc9f2736f4c6a34adbbcc9250afc6d",
+        "name": "Lattafa Asad Zanzibar Eau de Parfum",
+        "price": 180000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d7cb3d281d2afd373079345ba8668f16.webp",
+        "images": [
+            "d7cb3d281d2afd373079345ba8668f16.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "98c90dca72c435bb4492305061f6b776",
+        "name": "Lattafa Atlas",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "971b9f86d7e5d7e65d4d0c2373df4929.webp",
+        "images": [
+            "971b9f86d7e5d7e65d4d0c2373df4929.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6641cdd3d993bf2f8b10856068263e70",
+        "name": "Lattafa Bade'e Al Oud Sublime Eau de Parfum",
+        "price": 218000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "18d41fc971cede4065f5d1200bed3f9b.webp",
+        "images": [
+            "18d41fc971cede4065f5d1200bed3f9b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "65880bc9d2cda0044da33b61380bfaa4",
+        "name": "Lattafa Badee Al Oud Amethyst",
+        "price": 200000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0798789513ba3b5b16abae0ee97e5ed0.webp",
+        "images": [
+            "0798789513ba3b5b16abae0ee97e5ed0.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "effae9b066b9dc8f8487efff03f582d9",
+        "name": "Lattafa Badee Al Oud Honor & Glory",
+        "price": 210000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "70efb9eb3c7a87df44d8576b293facdc.webp",
+        "images": [
+            "70efb9eb3c7a87df44d8576b293facdc.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "be0326a0245147119399711b4f2eacd3",
+        "name": "Lattafa Badee al Oud Oud For Glory",
+        "price": 200000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "8dfb4e9bc59cf80496814f0c1ba5267c.webp",
+        "images": [
+            "8dfb4e9bc59cf80496814f0c1ba5267c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a02d0daf2cb8f51f70cd3332d64f459a",
+        "name": "Lattafa Eclaire Eau de Parfum",
+        "price": 229000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5dbedc23939737fd76071be06a34b4cc.webp",
+        "images": [
+            "5dbedc23939737fd76071be06a34b4cc.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "514cf2a644a70d7f634f8a60488e20c5",
+        "name": "Lattafa Fakhar Black (Alternativa de Yves Saint Laurent Y EDP)",
+        "price": 210000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b0a2d353f16dcdba06b882584180edb4.webp",
+        "images": [
+            "b0a2d353f16dcdba06b882584180edb4.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "545cea0a4ef81153ecad8dbbf810d7d5",
+        "name": "Lattafa Fakhar Eau de Parfum",
+        "price": 199000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "57e45804f96c8a7c2bb8bc692ecaf7bd.webp",
+        "images": [
+            "57e45804f96c8a7c2bb8bc692ecaf7bd.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "87095d75f055788870663fdf51861369",
+        "name": "Lattafa Fakhar Gold Extrait",
+        "price": 199000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c1db7c3907d9cd01f16251bbb65ed80b.webp",
+        "images": [
+            "c1db7c3907d9cd01f16251bbb65ed80b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "416fbd33a2de527da00f3296df4b9bb3",
+        "name": "Lattafa Give Me Gourmand Berry on top Eau de Parfum",
+        "price": 340000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "8da5e60949a7115b7ba29bda74030595.webp",
+        "images": [
+            "8da5e60949a7115b7ba29bda74030595.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "4099ef17a913eca8b7a481acfb69703d",
+        "name": "Lattafa Give Me Gourmand Choco Eau de Parfum",
+        "price": 249000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "339d408ddb7d8245c50892c15618831a.webp",
+        "images": [
+            "339d408ddb7d8245c50892c15618831a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8acff43b1e0a8de89bddc14e6acb63bd",
+        "name": "Lattafa Give Me Gourmand Cookie Eau de Parfum",
+        "price": 249000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f9bbe34ccb53e5abfe85d3ad5fbe9047.webp",
+        "images": [
+            "f9bbe34ccb53e5abfe85d3ad5fbe9047.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "1a112806dd422d319df06d4de541cdda",
+        "name": "Lattafa Give Me Gourmand Mallow Madness Eau de Parfum",
+        "price": 340000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "eeace118a786e6e41fab607b6b830d50.webp",
+        "images": [
+            "eeace118a786e6e41fab607b6b830d50.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "4e17becdcf8c106948ad784b85a79edf",
+        "name": "Lattafa Give Me Gourmand Vanilla Freak Eau de Parfum",
+        "price": 249000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "8db65958f75a91d6ccf2b4def73d8991.webp",
+        "images": [
+            "8db65958f75a91d6ccf2b4def73d8991.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6f992770a41e9f8d9fac7ce44a08af6b",
+        "name": "Lattafa Give Me Gourmand Whipped Pleasure Eau de Parfum",
+        "price": 249000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "35a2a11be4e83586e146d4aa0e306bfd.webp",
+        "images": [
+            "35a2a11be4e83586e146d4aa0e306bfd.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "538c134c00d9bb982808df9fe5eec13e",
+        "name": "Lattafa Haya Eau de Parfum",
+        "price": 218000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0d1146d58efdbd32179f5f7ea0061362.webp",
+        "images": [
+            "0d1146d58efdbd32179f5f7ea0061362.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "656ce8fd655d1bcfb994d07fc42ffb10",
+        "name": "Lattafa Khamrah Dukhan Eau de Parfum",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3d457046f02f4e8f2fd3f563b993084d.webp",
+        "images": [
+            "3d457046f02f4e8f2fd3f563b993084d.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ac2c10d6fbd5d24e7c0027a1d95e5f5c",
+        "name": "Lattafa Khamrah Eau de Parfum",
+        "price": 218000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "cb99e6348a4c6a2421dba6847ad4cba3.webp",
+        "images": [
+            "cb99e6348a4c6a2421dba6847ad4cba3.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "4f4e58a33c0f1b8c32e5e73b63de01ef",
+        "name": "Lattafa Khamrah Qahwa Eau de Parfum",
+        "price": 218000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "4cccbdb96f95387d3fe0e47c6c201f49.webp",
+        "images": [
+            "4cccbdb96f95387d3fe0e47c6c201f49.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "7fd2f8d56e10f45aa17e2db086d19df3",
+        "name": "Lattafa Khamrah Waha Eau de Parfum",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ffe14d2a98d108a2d8771ffc40438cd6.webp",
+        "images": [
+            "ffe14d2a98d108a2d8771ffc40438cd6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8fb4347b498214c1fa788d0326e2600d",
+        "name": "Lattafa Mayar",
+        "price": 210000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a5fb6005be41a3550959733743f5714b.webp",
+        "images": [
+            "a5fb6005be41a3550959733743f5714b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "d7f2acc6d066daf6a9eb0ed9502f2e97",
+        "name": "Lattafa Musamam White Intense",
+        "price": 269000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d466c742150d553df5acbf4a3b7897da.webp",
+        "images": [
+            "d466c742150d553df5acbf4a3b7897da.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "993a3fee70dd4436ac8a5e01d1dd3b4d",
+        "name": "Lattafa Pride Nebras (Alternativa Eilish Billie Eilish)",
+        "price": 239000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "e79511bdc2b8ef6f94c7e2829e7ae799.webp",
+        "images": [
+            "e79511bdc2b8ef6f94c7e2829e7ae799.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9ffa73f4ace3eb043886232bbe535a4d",
+        "name": "Lattafa Rave Now Woman",
+        "price": 199000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "07af90cbaa54948f57391090588cdb68.webp",
+        "images": [
+            "07af90cbaa54948f57391090588cdb68.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "d3574bf5ce9c529731090d0c9c074351",
+        "name": "Lattafa Shaheen Gold Eau de Parfum",
+        "price": 218000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "345a360fe9812771ecd249781d44d9b0.webp",
+        "images": [
+            "345a360fe9812771ecd249781d44d9b0.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "10e256efb8a2287aa7d1b7dc0961fdce",
+        "name": "Lattafa Shaheen Silver Eau de Parfum",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a2a5974be36453b278808bb32ac659b0.webp",
+        "images": [
+            "a2a5974be36453b278808bb32ac659b0.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "feb77fb0906e544b82c9409fa7d9dd8d",
+        "name": "Lattafa Victoria Eau de Parfum",
+        "price": 235000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "34c9b34a06d385465064bcc175aa6d8c.webp",
+        "images": [
+            "34c9b34a06d385465064bcc175aa6d8c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "99c5583e50cfd437ce7e5f208a37d863",
+        "name": "Lattafa Yara Candy Eau de Parfum",
+        "price": 200000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "380482accb076dae1499be5c0738ac5b.webp",
+        "images": [
+            "380482accb076dae1499be5c0738ac5b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "da72944e01b75f7515bc2c8c19791396",
+        "name": "Lattafa Yara Eau de Parfum",
+        "price": 200000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c6b545b2ea2ce6f9004a23882966d1f0.webp",
+        "images": [
+            "c6b545b2ea2ce6f9004a23882966d1f0.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ef4a556bb5e4d077a1c3ed33733079e6",
+        "name": "Lattafa Yara Moi Eau de Parfum",
+        "price": 180000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0f57ab9e945fe20444c95f8216722168.webp",
+        "images": [
+            "0f57ab9e945fe20444c95f8216722168.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e9e71ad9a647184afd0c8baeaa580ff6",
+        "name": "Lattafa Yara Tous Eau de Parfum",
+        "price": 180000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "dd009a5ac8404b617cdffce5ae6e1ae1.webp",
+        "images": [
+            "dd009a5ac8404b617cdffce5ae6e1ae1.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f77535ae9143a8e23e580090a5cbde00",
+        "name": "Le Labo Santal 33 Eau de Parfum",
+        "price": 1710000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "416df3c3d03650aeb1e4d39deafe1adc.webp",
+        "images": [
+            "416df3c3d03650aeb1e4d39deafe1adc.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "68050a3337f9627105ffd9a422f87f9e",
+        "name": "Le Labo The Matcha 26 Eau de Parfum",
+        "price": 1610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "e2b1c0e1ea4030c5e16084e3e46270ac.webp",
+        "images": [
+            "e2b1c0e1ea4030c5e16084e3e46270ac.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "98c3fa0de9eee76bb521af39c2c583fa",
+        "name": "Loewe Solo Loewe Eau de Toilette",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7096adf0a1a6762f60d91edd3a7f11c8.webp",
+        "images": [
+            "7096adf0a1a6762f60d91edd3a7f11c8.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "836819d4349a5fadbaf6a2988134c042",
+        "name": "Louis Vuitton Ombre Nomade Eau de Parfum",
+        "price": 2310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "2bf08e163b8b27d95e41d0a8e053a3d6.webp",
+        "images": [
+            "2bf08e163b8b27d95e41d0a8e053a3d6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6dda821956143e95cd0d80e9ee296bb7",
+        "name": "MAISON ALHAMBRA DARK DOOR INTENSE EDP",
+        "price": 215000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "902d4fbca49ad5033fa31a12bff17143.webp",
+        "images": [
+            "902d4fbca49ad5033fa31a12bff17143.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f5ffca660605557d54dad7d7567b069e",
+        "name": "Maison Alhambra Delilah",
+        "price": 210000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b3c7813a22d7341e511ce01d4deb69c0.webp",
+        "images": [
+            "b3c7813a22d7341e511ce01d4deb69c0.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5d7bc82b8d166e6db5770f09d16d238e",
+        "name": "Maison Alhambra Delilah Blanc",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "79857cde3d1c3b9b500b95d01de4f734.webp",
+        "images": [
+            "79857cde3d1c3b9b500b95d01de4f734.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ab738e7a2af0295cd4cfd9cb5947de4b",
+        "name": "Maison Alhambra Jean Lowe Azure",
+        "price": 245000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "95c1bbb76805fe983312abfed8255ddc.webp",
+        "images": [
+            "95c1bbb76805fe983312abfed8255ddc.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "da5ba81f0c8982d988fcb4a495666cdc",
+        "name": "Maison Alhambra Jean Lowe Immortel (Alternativa LV L'immensité)",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ea64a07b0d75751dc9585100117a0a5f.webp",
+        "images": [
+            "ea64a07b0d75751dc9585100117a0a5f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "80a681928db17b3cd207925be3226ee6",
+        "name": "Maison Alhambra Jean Lowe Noir (Alternativa LV Ombre Nomade)",
+        "price": 265000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0eba64a3538f6cf7f9741ac3cf02b7b4.webp",
+        "images": [
+            "0eba64a3538f6cf7f9741ac3cf02b7b4.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "77e393e841ae571dc71599c0de582c81",
+        "name": "Maison Alhambra Jean Lowe Vibe",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f32ee003df8d833c485b4e40637e750a.webp",
+        "images": [
+            "f32ee003df8d833c485b4e40637e750a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a92a1c514f134e745c360889f2932daf",
+        "name": "Maison Alhambra Kismet Eau de Parfum",
+        "price": 169000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3d7eb8ffe4b454569c25090fded5f53c.webp",
+        "images": [
+            "3d7eb8ffe4b454569c25090fded5f53c.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "2330be2fc9a30ae50b675b81db9e1e71",
+        "name": "Maison Alhambra Lovely Cherie (Alternativa Tom Ford Lost Cherry)",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "42cfbf3e801f228999339ea8851b2165.webp",
+        "images": [
+            "42cfbf3e801f228999339ea8851b2165.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "dc45ceb7280531e940bce300649664ec",
+        "name": "Maison Alhambra Porto Neroli (Alternativa de Tom Ford Neroli Portofino)",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "dcf186a3fc44b50022483c1a159b5ac3.webp",
+        "images": [
+            "dcf186a3fc44b50022483c1a159b5ac3.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9798b47babfe7c3658e924c69de04e1a",
+        "name": "Maison Alhambra Sceptre Malachite",
+        "price": 230000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "8f7a30d663ec3d13f5e572d85c00452b.webp",
+        "images": [
+            "8f7a30d663ec3d13f5e572d85c00452b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "4178669aed36f467857f8b7a91e1eefe",
+        "name": "Maison Francis Kurkdjian Baccarat Rouge 540 Eau de Parfum",
+        "price": 2920000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "8ca22b472c5f3fd5d327021b60052877.webp",
+        "images": [
+            "8ca22b472c5f3fd5d327021b60052877.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f9c04074906cd088d0a33cf92ca68ab3",
+        "name": "Maison Francis Kurkdjian Baccarat Rouge 540 Extrait de Parfum",
+        "price": 2310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c4c9621caed720ec259f1ae9ac0284c6.webp",
+        "images": [
+            "c4c9621caed720ec259f1ae9ac0284c6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "7303b08a86ac55ef2abcc1466b45c3df",
+        "name": "Maison Francis Kurkdjian Grand Soir Eau de Parfum",
+        "price": 1410000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "6cb6b29bf569141ae0457b8b3548160e.webp",
+        "images": [
+            "6cb6b29bf569141ae0457b8b3548160e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "73cc1c7e7a3ffbd9a3efec9373165c06",
+        "name": "Maison Margiela Replica By The Fireplace Eau de Toilette",
+        "price": 619000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0b4aba0718c92b913798d0f485bc94fb.webp",
+        "images": [
+            "0b4aba0718c92b913798d0f485bc94fb.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "4c0f6b8bef6273f25e6895661e59281a",
+        "name": "Marc Jacobs Daisy Eau de Toilette",
+        "price": 410000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "53f890432e567fa31590f442ec260345.webp",
+        "images": [
+            "53f890432e567fa31590f442ec260345.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "c71afda6df3b00547ecd01d5da20d7ef",
+        "name": "Marc Jacobs Perfect Eau de Parfum",
+        "price": 470000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f940b6961562a667fedb64e9b652813e.webp",
+        "images": [
+            "f940b6961562a667fedb64e9b652813e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "c9d14c8abf5597cc3f3123e3954d52d7",
+        "name": "Mast Perfume Rome Extradose For Men By Bharara",
+        "price": 249000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "4cd0976dac79e1ad296c15d00ccf5266.webp",
+        "images": [
+            "4cd0976dac79e1ad296c15d00ccf5266.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9e235dcb3e3f59baf4f6e2157a38ef0a",
+        "name": "Michael Kors Sexy Amber Eau de Parfum",
+        "price": 240000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b6cabfcd8355f2e50fd60ea3b6ecfbc5.webp",
+        "images": [
+            "b6cabfcd8355f2e50fd60ea3b6ecfbc5.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8369c13265c29ca020670bb9fa481b18",
+        "name": "Miss Dior Eau de Parfum",
+        "price": 810000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f29c7129103024fc23640f356cb1ff81.webp",
+        "images": [
+            "f29c7129103024fc23640f356cb1ff81.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "05a05a0501247db7df49d0b040b9500a",
+        "name": "Montale Arabians Tonka Eau de Parfum",
+        "price": 539000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "dbd1e8823ad4c96e624fa0f90f380bca.webp",
+        "images": [
+            "dbd1e8823ad4c96e624fa0f90f380bca.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ba595ce7f17ada4013613ddf6c94858d",
+        "name": "Montale Starry Nights Eau de Parfum",
+        "price": 480000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7e8fa2245a5fc28eb5bbe28efc598fca.webp",
+        "images": [
+            "7e8fa2245a5fc28eb5bbe28efc598fca.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "78a2f040ff20b303096d7c570f871392",
+        "name": "Montblanc Emblem Eau de Toilette",
+        "price": 280000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ec13b1431c74ef7941aeececa7519d5b.webp",
+        "images": [
+            "ec13b1431c74ef7941aeececa7519d5b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f9880481c3249a7f8ce5598a29832088",
+        "name": "Montblanc Starwalker Eau de Toilette",
+        "price": 200000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "3005e7ef04263252750d3e26c6f61374.webp",
+        "images": [
+            "3005e7ef04263252750d3e26c6f61374.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "543b6bce76a016df1966d16452aa2653",
+        "name": "Moschino Fresh Couture Eau de Toilette",
+        "price": 200000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "992c7ba98647d86a625fa5feb173bc4e.webp",
+        "images": [
+            "992c7ba98647d86a625fa5feb173bc4e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "56c6c2f7557ce9844d6db434166a8767",
+        "name": "Moschino Toy 2 Bubble Gum Eau de Toilette",
+        "price": 299000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "05d1eff2b5eb51c4124125bfb8de36e0.webp",
+        "images": [
+            "05d1eff2b5eb51c4124125bfb8de36e0.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e4942ec65ee5112b99d3391b0dce11a6",
+        "name": "Moschino Toy 2 Eau de Parfum",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c0942fb191ea7ca6458f214f055adda8.webp",
+        "images": [
+            "c0942fb191ea7ca6458f214f055adda8.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "beb367bc8c52d5992f9ef70adef2768c",
+        "name": "Moschino Toy 2 Pearl Eau de Parfum",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "1575354099afa9cd328e33fea372ae6e.webp",
+        "images": [
+            "1575354099afa9cd328e33fea372ae6e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "467052fed44c1cc191691fb7724ca960",
+        "name": "Moschino Toy Boy Eau de Parfum",
+        "price": 315000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b9151bab2201bfc226ef3fe7d2e52376.webp",
+        "images": [
+            "b9151bab2201bfc226ef3fe7d2e52376.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f5bef2d7ddf0cf079f549cba3e5556c9",
+        "name": "Narciso Rodriguez For Her Eau de Parfum",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "08a57b01cf686cca66c15030b329cc27.webp",
+        "images": [
+            "08a57b01cf686cca66c15030b329cc27.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "637a54b09f3f5885e2cd14b79e884461",
+        "name": "Nautica Voyage Eau de Toilette",
+        "price": 140000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "aebfc32415b43d2a676d23ef917fa412.webp",
+        "images": [
+            "aebfc32415b43d2a676d23ef917fa412.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8a0169bc51a364f963f51716bb8ab6f1",
+        "name": "Nishane Hacivat Extrait de Parfum",
+        "price": 1070000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7d6c41b3a8caad2744406ff7510dbf41.webp",
+        "images": [
+            "7d6c41b3a8caad2744406ff7510dbf41.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ed6e285d0b8d5ece178e9345f267e82f",
+        "name": "Nusuk Ana Al Awwal Eau de Parfum",
+        "price": 180000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "96c33d5534a4a3024e97002ec1389087.webp",
+        "images": [
+            "96c33d5534a4a3024e97002ec1389087.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "16f9f4a914cd28795205b0126ccac3e4",
+        "name": "Orientica Amber Rouge Eau de Parfum",
+        "price": 419000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f72da192ec0531fd34029954e7ae4f9e.webp",
+        "images": [
+            "f72da192ec0531fd34029954e7ae4f9e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5af16de8c98492aa5a6ea442aacefc88",
+        "name": "Paco Rabanne 1 Million Eau de Toilette",
+        "price": 430000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "384f9de78118eba73b37d45e4836350b.webp",
+        "images": [
+            "384f9de78118eba73b37d45e4836350b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "12226297700c17918d33c1ad4ddee863",
+        "name": "Paco Rabanne 1 Million Lucky Eau de Toilette",
+        "price": 610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "b0827ef4d4366de67922f159df12bbb8.webp",
+        "images": [
+            "b0827ef4d4366de67922f159df12bbb8.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "950f7ba289689725d7438b57ae4e1dcf",
+        "name": "Paco Rabanne 1 Million Parfum",
+        "price": 460000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ea7704ff91a6841b0db92db2418a230f.webp",
+        "images": [
+            "ea7704ff91a6841b0db92db2418a230f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9ce4af4a048b48b76213d0a4572a0b6a",
+        "name": "Paco Rabanne Black XS Eau de Toilette",
+        "price": 360000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "fe9c753f1a7cb31f3d0b8a107f0c44eb.webp",
+        "images": [
+            "fe9c753f1a7cb31f3d0b8a107f0c44eb.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "68328fb6e98f990e1b58db13602f9f6f",
+        "name": "Paco Rabanne Fame Blooming Pink Eau de Parfum",
+        "price": 610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ddea2e46252fb062e1a2a8fe642a8f70.webp",
+        "images": [
+            "ddea2e46252fb062e1a2a8fe642a8f70.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "bcf2ad403741c89b3559404b5db4cb4d",
+        "name": "Paco Rabanne Fame Eau de Parfum",
+        "price": 515000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a8983d4e79e8cfeb3e45844a71e7585d.webp",
+        "images": [
+            "a8983d4e79e8cfeb3e45844a71e7585d.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "0eaa2594deddc06a28b14c25ac1d3bf8",
+        "name": "Paco Rabanne Invictus Eau de Toilette",
+        "price": 570000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "4b404af7fb99794ed5c37aa99d219d69.webp",
+        "images": [
+            "4b404af7fb99794ed5c37aa99d219d69.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "0dd591f24a3b7f97392de3124190d194",
+        "name": "Paco Rabanne Invictus Victory Eau de Parfum",
+        "price": 500000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a3b647350cca33d5464ce0d504c02490.webp",
+        "images": [
+            "a3b647350cca33d5464ce0d504c02490.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f54583a2ebbab17de62e16394214137c",
+        "name": "Paco Rabanne Olympea Eau de Parfum",
+        "price": 450000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7f2f66a2b6dafaa5dc3a3b6505e18684.webp",
+        "images": [
+            "7f2f66a2b6dafaa5dc3a3b6505e18684.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "2cbfb20955e9a4cd1f679aea25d2a72e",
+        "name": "Paco Rabanne Phantom Eau de Toilette",
+        "price": 515000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "060533f00ab447f826108e301dac7bd8.webp",
+        "images": [
+            "060533f00ab447f826108e301dac7bd8.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e94e0e2cbba82166b91d1f389b3b3041",
+        "name": "Paco Rabanne Phantom Parfum",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "372b4f4f3ba58096a18ffa1f2f1fb6e2.webp",
+        "images": [
+            "372b4f4f3ba58096a18ffa1f2f1fb6e2.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "839f949c77b4910bffe95363c1a65643",
+        "name": "Parfums de Marly Delina Eau de Parfum",
+        "price": 1210000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5be939f9829da9bc1503414fed84253f.webp",
+        "images": [
+            "5be939f9829da9bc1503414fed84253f.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e094696cbdaa251531b150b628be5237",
+        "name": "Paris Hilton Can Can Eau de Parfum",
+        "price": 180000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ef0d6546207281e15419ca489fa28ffc.webp",
+        "images": [
+            "ef0d6546207281e15419ca489fa28ffc.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "62a36de66af0a1b235e351569177e7e2",
+        "name": "Paris Hilton Eau de Parfum",
+        "price": 170000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "59eec65d647688350f273dbee532787a.webp",
+        "images": [
+            "59eec65d647688350f273dbee532787a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "78ffec39bde33aa2bc96070ce86b4754",
+        "name": "Paris Hilton Rose Rush Eau de Parfum",
+        "price": 170000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "77c2e12056237642b7291c0b3c906e2a.webp",
+        "images": [
+            "77c2e12056237642b7291c0b3c906e2a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ac3d4d23752c99d0f564ac9995fac1d6",
+        "name": "Prada Candy Eau de Parfum",
+        "price": 610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "075a405b1e82a56be11b0196209af9aa.webp",
+        "images": [
+            "075a405b1e82a56be11b0196209af9aa.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "757809d30e3abd9d3617878322ff0575",
+        "name": "Prada Luna Rossa Carbon Eau de Toilette",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ee5fa9c82ac01aa662fe3f6ce2597391.webp",
+        "images": [
+            "ee5fa9c82ac01aa662fe3f6ce2597391.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "b406272f25d6a73e6264918df21e119e",
+        "name": "Prada Paradoxe Eau de Parfum",
+        "price": 670000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "af0759a061ac591960993fb7f3de65e9.webp",
+        "images": [
+            "af0759a061ac591960993fb7f3de65e9.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "bcc48e3ed99b10f3005e1f95ac074b06",
+        "name": "Ralph Lauren Polo Blue Parfum",
+        "price": 470000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d78ef3ff9c8920e7aad9dafd237dce36.webp",
+        "images": [
+            "d78ef3ff9c8920e7aad9dafd237dce36.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "5b946363ebabf0aaba4164ea88113bb7",
+        "name": "Ralph Lauren Polo Red Eau de Toilette",
+        "price": 340000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "9cc386dcf9de76d41993fa18bb95c0ea.webp",
+        "images": [
+            "9cc386dcf9de76d41993fa18bb95c0ea.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "3689c60937a05194c6d29f90a240566d",
+        "name": "Ralph Lauren Ralph Eau de Toilette",
+        "price": 339000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "31711eb24832cab42ba2dc7956e615ab.webp",
+        "images": [
+            "31711eb24832cab42ba2dc7956e615ab.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "fe535b20ac90751b9e3452426ecd3fa7",
+        "name": "Rasasi Hawas Black",
+        "price": 259000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "84f4a168f5a9a45d9ef7f1e2f69d4014.webp",
+        "images": [
+            "84f4a168f5a9a45d9ef7f1e2f69d4014.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f0f377df1888d1fa66b6993634b7a0ec",
+        "name": "Rasasi Hawas Diva",
+        "price": 360000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7e594314221a2761c21fe5deeb3dc7d0.webp",
+        "images": [
+            "7e594314221a2761c21fe5deeb3dc7d0.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "af0134fe26e1874124535db3b59a5bdc",
+        "name": "Rasasi Hawas Eclat",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "c51843021fb998d4cd0fb580e5483a4b.webp",
+        "images": [
+            "c51843021fb998d4cd0fb580e5483a4b.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "4c965a7da48b7eb6643b32d715e0cc00",
+        "name": "Rasasi Hawas Elixir Eau de Parfum",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "23b474f6cb8586fafe9eab993e6b2cb6.webp",
+        "images": [
+            "23b474f6cb8586fafe9eab993e6b2cb6.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "4b2b45108f78cc503f6904124b59f119",
+        "name": "Rasasi Hawas Fire",
+        "price": 339000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "597af5c07bef971b6d4021957bd5cb39.webp",
+        "images": [
+            "597af5c07bef971b6d4021957bd5cb39.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "bf0b99bf52ba98711fac69c1bf8bf001",
+        "name": "Rasasi Hawas For Him Eau de Parfum",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "459cd60593b3f6be083c4bc7100b5e80.webp",
+        "images": [
+            "459cd60593b3f6be083c4bc7100b5e80.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "dce95f087dc9d45007c64d214460f6aa",
+        "name": "Rasasi Hawas Ice",
+        "price": 310000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "9ed473016ed71f3a04b813686e61f083.webp",
+        "images": [
+            "9ed473016ed71f3a04b813686e61f083.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ad3e749879ad4e686ae382ab4e14b03e",
+        "name": "Rasasi Hawas Kobra",
+        "price": 340000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "98bf1b444caacb31c81b71567b0f26c2.webp",
+        "images": [
+            "98bf1b444caacb31c81b71567b0f26c2.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6ab6948353ea0e25897159afd85e14ab",
+        "name": "Rasasi Hawas Malibu",
+        "price": 340000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a84a6a460ee43cdf94404b5c7b5ae3f5.webp",
+        "images": [
+            "a84a6a460ee43cdf94404b5c7b5ae3f5.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "c3e364948c6666ccb816c124478218f6",
+        "name": "Rasasi Hawas Pink",
+        "price": 400000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5743ca843d61a00037c32408fed695ac.webp",
+        "images": [
+            "5743ca843d61a00037c32408fed695ac.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "9cdf56228610a8f4e6cd68d6fc0b9451",
+        "name": "Rasasi Hawas Tropical",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "52cad4fe1109184f4c5311672140a5ec.webp",
+        "images": [
+            "52cad4fe1109184f4c5311672140a5ec.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "a9eaf47a0f054ce8a0d5b374adb6092e",
+        "name": "Rasasi Hawas Verde",
+        "price": 370000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "491cfba58fd0fe9aa7c5786381d26f26.webp",
+        "images": [
+            "491cfba58fd0fe9aa7c5786381d26f26.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ebc28bee0198e274f8c1ada5b2300bf3",
+        "name": "Swiss Arabian Shaghaf Oud Eau de Parfum",
+        "price": 250000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5d14d63c5eb3f733087fe566238b0abb.webp",
+        "images": [
+            "5d14d63c5eb3f733087fe566238b0abb.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6be4e9eb636919232419a85338fa1945",
+        "name": "Thierry Mugler Alien Eau de Parfum",
+        "price": 580000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d9196e8e238ed81810037d52b2ea66df.webp",
+        "images": [
+            "d9196e8e238ed81810037d52b2ea66df.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "cfdda20f2e6429e87e98bd7494cdbd30",
+        "name": "Thierry Mugler Angel Eau de Parfum",
+        "price": 570000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "ca61b0dfced0e997b1ed2f622e6b60db.webp",
+        "images": [
+            "ca61b0dfced0e997b1ed2f622e6b60db.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "b7b60fd244448551aa12f8a803b89139",
+        "name": "Tom Ford Black Orchid Eau de Parfum",
+        "price": 970000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "7963eefa8af1bb8e491f3d1cdafb05f7.webp",
+        "images": [
+            "7963eefa8af1bb8e491f3d1cdafb05f7.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e68f6ceabd53fe3160fe94b7ccc53fbe",
+        "name": "Tom Ford Café Rose Eau de Parfum",
+        "price": 970000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d5e9efc49455d6744a1bd8103227126d.webp",
+        "images": [
+            "d5e9efc49455d6744a1bd8103227126d.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "68961f8b8f5c954c1572fff0f95cf4bb",
+        "name": "Tom Ford Lost Cherry Eau de Parfum",
+        "price": 1810000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "bbbf798175fb50d0293a7fac91f3d6ec.webp",
+        "images": [
+            "bbbf798175fb50d0293a7fac91f3d6ec.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "4539e95e1773cd9a828483305137e0bf",
+        "name": "Tom Ford Tobacco Vanille Eau de Parfum",
+        "price": 1810000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "229685f697cb987555ee47cd608a50d9.webp",
+        "images": [
+            "229685f697cb987555ee47cd608a50d9.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "224f3d5d1cdc460929fd27d3d6dff52a",
+        "name": "Tommy Girl Eau de Toilette",
+        "price": 200000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "267a1ea596f74c6d23955658dd6b17bf.webp",
+        "images": [
+            "267a1ea596f74c6d23955658dd6b17bf.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "59e7c726c89c839849a0681a45b626af",
+        "name": "Tommy Hilfiger Tommy Eau de Toilette",
+        "price": 190000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "379101483ba735dc688ecd8c61292868.webp",
+        "images": [
+            "379101483ba735dc688ecd8c61292868.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "39fd18169affc8078b7776192a5c33be",
+        "name": "Valentino Donna Born In Roma Eau de Parfum",
+        "price": 670000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5b1fc26b36e5215574213e5584b19bfe.webp",
+        "images": [
+            "5b1fc26b36e5215574213e5584b19bfe.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e0c624653f96e5ffdbb69be36ae2893b",
+        "name": "Valentino Uomo Born In Roma Eau de Toilette",
+        "price": 610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "767461f26181674b52fa814c867e2696.webp",
+        "images": [
+            "767461f26181674b52fa814c867e2696.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "253c8004f7133fc07197c642bac920b1",
+        "name": "Valentino Uomo Eau de Toilette",
+        "price": 479000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "5291362050ba432719c1c42de582fa6a.webp",
+        "images": [
+            "5291362050ba432719c1c42de582fa6a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f52d702dfd376a406e6766541e234ba9",
+        "name": "Versace Bright Crystal Eau de Toilette",
+        "price": 340000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "439388433193fdf6cafe43c535dc37c5.webp",
+        "images": [
+            "439388433193fdf6cafe43c535dc37c5.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "e80d7a58855f327ea1265baf2b159043",
+        "name": "Versace Dylan Blue Pour Homme Eau de Toilette",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "89e805e5f74205c7a4714f1c96a697ee.webp",
+        "images": [
+            "89e805e5f74205c7a4714f1c96a697ee.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "6b6fd9180114b26169761cda5733f340",
+        "name": "Versace Eros Eau de Parfum",
+        "price": 340000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "54bc9eb5fe9006b989a9c062c77bdd4e.webp",
+        "images": [
+            "54bc9eb5fe9006b989a9c062c77bdd4e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "f040edfc47696da3eb3582a41db6031e",
+        "name": "Versace Eros Eau de Toilette",
+        "price": 330000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "21e99f62c6159ec2b245a6352fe0bf66.webp",
+        "images": [
+            "21e99f62c6159ec2b245a6352fe0bf66.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "ab7b5fe664be75724133ed1ec58e97f2",
+        "name": "Versace Eros Energy Eau de Parfum",
+        "price": 410000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "32ddbb02dec40a87376e9357f1d823c1.webp",
+        "images": [
+            "32ddbb02dec40a87376e9357f1d823c1.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "13db86b179f52c57f6c8fc6201f49024",
+        "name": "Versace Eros Pour Femme Eau de Parfum",
+        "price": 410000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "9c378841e95db0c8373b56f7ac96583a.webp",
+        "images": [
+            "9c378841e95db0c8373b56f7ac96583a.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "79b9982c6cf0e7559d97ac09fbe88f88",
+        "name": "Versace Man Eau Fraiche Eau de Toilette",
+        "price": 267000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "cc1de7ea997230deea15a32eac79549e.webp",
+        "images": [
+            "cc1de7ea997230deea15a32eac79549e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "269c1c17f97434b6894ed52d42b0ac02",
+        "name": "Victoria's Secret Bombshell Eau de Parfum",
+        "price": 470000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "6d3d4b4f15ac66bb027ea7d40a907dcf.webp",
+        "images": [
+            "6d3d4b4f15ac66bb027ea7d40a907dcf.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "8692f45618be972a729cda3e5a58e0f7",
+        "name": "Viktor & Rolf Flowerbomb Eau de Parfum",
+        "price": 530000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "488ea0b8e6db76a40bb70660dc0851cc.webp",
+        "images": [
+            "488ea0b8e6db76a40bb70660dc0851cc.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "611396f5318248f8049ef7395bc29a54",
+        "name": "Viktor & Rolf Spicebomb Eau de Toilette",
+        "price": 360000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "eefa7604a17e140d66b68ec52f0ea0d5.webp",
+        "images": [
+            "eefa7604a17e140d66b68ec52f0ea0d5.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "0a128aa46f24b8394bcbed85b5411615",
+        "name": "Xerjoff Erba Pura Eau de Parfum",
+        "price": 1110000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f543361265ea2b3a18aae3c44eebc6b7.webp",
+        "images": [
+            "f543361265ea2b3a18aae3c44eebc6b7.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "10b0255c8f4d95e84625c88e5477ef35",
+        "name": "Yves Saint Laurent Black Opium Eau de Parfum",
+        "price": 610000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "d92ac0cc75b6fa8c9985d57ad8c25fca.webp",
+        "images": [
+            "d92ac0cc75b6fa8c9985d57ad8c25fca.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "49d7dc6d172982f3e2ee1c20ee60bdb1",
+        "name": "Yves Saint Laurent Libre Eau de Parfum",
+        "price": 660000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "a31b6bd0154eb69de8613cbbb753006e.webp",
+        "images": [
+            "a31b6bd0154eb69de8613cbbb753006e.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "37400fa2124726a1502b2630a6fbef55",
+        "name": "Yves Saint Laurent Libre Intense Eau de Parfum",
+        "price": 710000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "0403ae8cb212dfe51c9eff6fcb1cbd99.webp",
+        "images": [
+            "0403ae8cb212dfe51c9eff6fcb1cbd99.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "2ad23258834a1f5206e0335a49369e76",
+        "name": "Yves Saint Laurent Mon Paris Eau de Parfum",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "52616214199f45fcf5aca8ba91c543a9.webp",
+        "images": [
+            "52616214199f45fcf5aca8ba91c543a9.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "4753b6bb143d1514d7dea502d21f2783",
+        "name": "Yves Saint Laurent Opium Eau de Parfum",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "56a196318fdfe4ab4ba17963a8602165.webp",
+        "images": [
+            "56a196318fdfe4ab4ba17963a8602165.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
+    },
+    {
+        "id": "236eee1a1e0af263ae89f180b8bb913c",
+        "name": "Yves Saint Laurent Y Eau de Toilette",
+        "price": 510000,
+        "category": "perfumeria",
+        "stock": 0,
+        "image": "f91b71845d35cb75b5077d2ded3184df.webp",
+        "images": [
+            "f91b71845d35cb75b5077d2ded3184df.webp"
+        ],
+        "active": true,
+        "is_new": false,
+        "variants": []
     }
 ]
