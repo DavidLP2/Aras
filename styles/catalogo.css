@@ -547,6 +547,20 @@ header {
 
 /* --- FOOTER --- */
 footer { text-align: center; background: var(--text-color); color: #f7f3fa; padding: 25px 0; font-size: 0.9rem; }
+.storefront-footer { padding: 38px 0 18px; background: #30251f; color: #f9f4ee; text-align: left; }
+.storefront-footer .footer-brand { color: #fff; font-family: Georgia, "Times New Roman", serif; font-size: 1.65rem; letter-spacing: .18em; }
+.storefront-footer .footer-content { padding-top: 0; padding-bottom: 28px; }
+.storefront-footer .footer-content p { color: #ded1c5; }
+.storefront-footer .footer-column h2 { color: #fff; }
+.storefront-footer .footer-column a,
+.storefront-footer .footer-column > span { color: #ded1c5; }
+.storefront-footer .footer-column a:hover,
+.storefront-footer .footer-column a:focus-visible { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.storefront-footer .footer-column i { color: #d7ad80; }
+.storefront-footer .footer-pending { color: #bfb0a4; }
+.storefront-footer .footer-bottom { display: flex; max-width: 1200px; align-items: center; justify-content: space-between; gap: 16px; margin: 0 auto; border-top: 1px solid rgba(255, 255, 255, .15); padding: 16px 24px 0; text-align: left; }
+.storefront-footer .footer-bottom p { margin: 0; color: #bfb0a4; }
+.storefront-footer .footer-bottom img { margin-top: 0; }
 .social-links { display: flex; align-items: center; gap: 18px; }
 .social-icon { display: inline-flex; width: 30px; height: 30px; align-items: center; justify-content: center; color: #f7f3fa; font-size: 1.35rem; text-decoration: none; }
 .social-icon:hover, .social-icon:focus-visible { color: #ead8c4; }
@@ -575,6 +589,9 @@ footer img { width: 150px; height: auto; vertical-align: middle; }
 }
 @media (max-width: 460px) {
     .footer-content { grid-template-columns: 1fr; padding-right: 20px; padding-left: 20px; }
+}
+@media (max-width: 460px) {
+    .storefront-footer .footer-bottom { flex-direction: column; padding-right: 20px; padding-left: 20px; text-align: center; }
 }
 
 @media (max-width: 600px) {
