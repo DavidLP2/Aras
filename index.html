@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicon.ico?v=2" sizes="any">
     <title>ARAS | Catálogo</title>
     <meta name="description" content="Explora el catálogo ARAS de cuidado personal, belleza y perfumería.">
-    <link rel="stylesheet" href="styles/catalogo.css?v=28">
+    <link rel="stylesheet" href="styles/catalogo.css?v=30">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +30,7 @@
                 <li><a href="./" class="active">Inicio</a></li>
                 <li><a href="#categorias">Categorías</a></li>
                 <li><a href="#coleccion">Todos los productos</a></li>
+                <li><a href="#search-bar" data-focus-search>Buscar</a></li>
             </ul>
         </nav>
         <div class="header-icons" aria-label="Acciones de cuenta y compra">
@@ -38,7 +39,7 @@
                 <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
                 <span id="cart-counter" aria-live="polite"></span>
             </button>
-            <a class="account-button" href="mi-cuenta" aria-label="Mi cuenta">
+            <a class="account-button" href="admin/mi-cuenta" aria-label="Mi cuenta">
                 <i class="fa-solid fa-user" aria-hidden="true"></i>
             </a>
         </div>
@@ -93,7 +94,6 @@
                 <span class="eyebrow">COLECCIÓN ARAS</span>
                 <h2 id="catalog-heading">Cuidado personal, belleza y perfumería</h2>
                 <p>Descubre productos para consentirte y encontrar tus favoritos.</p>
-                <p class="demo-catalog-note">Catálogo de prueba: imágenes, nombres y precios son demostrativos; reemplázalos por los productos reales antes de vender.</p>
             </div>
             <div class="product-grid" data-product-grid="catalog" aria-live="polite">
                 <p class="catalog-empty">Cargando productos...</p>
@@ -175,11 +175,11 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="storefront-footer">
         <div class="footer-content">
             <div class="footer-about">
                 <span class="footer-brand">ARAS</span>
-                <p>Encuentra tu estilo.</p>
+                <p>Tu belleza, tu esencia.</p>
             </div>
             <div class="footer-column footer-legal">
                 <h2>Legal</h2>
@@ -191,8 +191,8 @@
                 <h2>Redes sociales</h2>
                 <div class="social-links" aria-label="Redes sociales ARAS">
                     <a class="social-icon" href="https://www.instagram.com/arasoficial.co/" target="_blank" rel="noopener noreferrer" aria-label="Instagram ARAS" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                    <span class="social-icon is-pending" role="img" aria-label="TikTok pendiente" title="TikTok pendiente"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></span>
-                    <span class="social-icon is-pending" role="img" aria-label="WhatsApp pendiente" title="WhatsApp pendiente"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+                    <a class="social-icon" href="https://www.tiktok.com/@arasoficial.co?_r=1&amp;_t=ZS-9BHCeSAAaNM" target="_blank" rel="noopener noreferrer" aria-label="TikTok ARAS" title="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                    <a class="social-icon" href="https://wa.me/573014047841" target="_blank" rel="noopener noreferrer" aria-label="Contactar a ARAS por WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="footer-column footer-payment">
@@ -223,7 +223,7 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
     <script src="https://checkout.wompi.co/widget.js" defer></script>
-    <script src="scripts/inicio.js?v=27"></script>
+    <script src="scripts/inicio.js?v=28"></script>
     <script src="scripts/banners.js?v=4"></script>
     <script src="scripts/cookies.js?v=3"></script>
 </body>

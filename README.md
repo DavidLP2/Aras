@@ -2,10 +2,14 @@
 
 Tienda de cuidado personal, belleza y perfumería con catálogo administrable,
 inventario, banners, bolsa de compras y solicitudes de entrega a domicilio.
-El catálogo actual contiene 30 artículos demostrativos para pruebas, 10 por
-categoría. Sus nombres y precios son ficticios y deben reemplazarse por datos
-reales antes de vender. Las imágenes son fotografías de referencia reutilizables;
-consulta sus fuentes y licencias en [Créditos de imágenes](./creditos-imagenes.html).
+
+## Aplicación completa
+
+La aplicación de producción requiere Apache y PHP de XAMPP, con las extensiones
+`fileinfo` y GD (incluida WebP y `pdo_mysql`). Las rutas públicas y del panel
+ocultan `.html` y `.php`; Apache debe tener `mod_rewrite` habilitado y permitir
+reglas `.htaccess`. El proyecto utiliza Composer para PHPMailer y el envío
+autenticado por SMTP.
 
 ## Panel de administración
 
@@ -202,18 +206,29 @@ sesión, registro y seguimiento de pedidos. Usa la sesión de cliente; no compar
 el acceso administrativo.
 
 En **Panel administrativo → Productos** puedes importar hasta 500 productos
-desde [la plantilla CSV](./admin/plantilla-productos.csv). Conserva exactamente
-las columnas `name,price,category,stock,active,is_new,image,variants`; usa la
-clave de categoría existente y valores `1`/`0` para `active` e `is_new`. En el
-formulario puedes adjuntar las fotos JPG, PNG o WebP (máximo 5 MB por foto y
-25 MB en total); escribe el nombre exacto de cada archivo en la columna `image`.
-El sistema convierte las imágenes a WebP. Si `image` se deja vacío, se reutiliza
-la imagen predeterminada del catálogo. El CSV admite hasta 5 MB.
+desde [la plantilla de Excel](./admin/plantilla-productos.php). Cada dato tiene
+su propia columna. En Excel, inserta cada foto con **Insertar → Imágenes → Colocar
+sobre celdas** y ajústala encima de la celda **Foto** de la fila del producto.
+No uses **Colocar en celda**, porque ese formato no se puede importar. No se
+adjuntan imágenes por separado. Se aceptan JPG, PNG y WebP, hasta 5 MB por foto y
+25 MB en total; el sistema las convierte a WebP. Si la celda Foto queda vacía,
+se reutiliza la imagen predeterminada del catálogo.
+
+La plantilla incluye una hoja con las categorías vigentes y un desplegable en la
+columna **Categoría**. También puedes escribir allí el nombre de una categoría
+nueva: al importar, se agrega automáticamente al catálogo.
+
+La plantilla incluye tres columnas opcionales para tallas, colores y
+presentaciones. Por ejemplo, escribe `Tamaño: 30 ml | 50 ml`. Para una muestra
+de color, usa `Color: Rojo=#FF0000 | Degradado=#F28C28+#9B287B`. Se permiten
+hasta tres grupos y 30 alternativas por grupo. También se aceptan CSV de hasta
+5 MB, pero estos no permiten incluir fotos. Los CSV antiguos que usaban una
+columna `variants` con JSON siguen siendo compatibles.
 
 La importación valida cada fila por separado: agrega los productos correctos y
 muestra cuántos se importaron, cuáles se omitieron y el motivo de cada fila.
-Para tallas, colores o presentaciones, `variants` acepta JSON con hasta 3 grupos
-y 30 opciones por grupo, por ejemplo:
+En los CSV antiguos, `variants` acepta JSON con hasta 3 grupos y 30 opciones por
+grupo, por ejemplo:
 
 ```json
 [{"name":"Tamaño","options":[{"label":"30 ml"},{"label":"50 ml"}]}]
@@ -222,8 +237,9 @@ y 30 opciones por grupo, por ejemplo:
 Los colores pueden incluir hasta cuatro valores hexadecimales `colors` para
 mostrar una muestra sólida o un degradado. Las variaciones son opcionales; el
 precio y el inventario se manejan por producto completo, no por cada opción.
-El panel también permite configurar las mismas variaciones al agregar o editar
-un producto.
+Al agregar o editar un producto en el panel puedes crear estas opciones con un
+editor visual; el cliente selecciona las disponibles en la ficha del producto
+antes de agregarlo a su bolsa.
 
 La carpeta `storage` debe permitir escritura a Apache y sus archivos `.htaccess`
 deben estar habilitados. Los archivos `storage/database.local.php` y
