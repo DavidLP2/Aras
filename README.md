@@ -11,6 +11,23 @@ ocultan `.html` y `.php`; Apache debe tener `mod_rewrite` habilitado y permitir
 reglas `.htaccess`. El proyecto utiliza Composer para PHPMailer y el envío
 autenticado por SMTP.
 
+## Vista de catálogo en GitHub Pages
+
+GitHub Pages no ejecuta PHP ni conecta con MySQL. Antes de publicar cambios del
+catálogo para Pages, genera su copia pública con:
+
+```shell
+php scripts/export-static-catalog.php
+```
+
+El comando crea `catalogo-static.json` y copia las imágenes necesarias a
+`img/productos/`; no publica la carpeta privada `storage/`. La página usa esa
+copia cuando la API PHP no está disponible. Las categorías con productos
+activos se muestran como filtros. Vuelve a generar y publicar esos archivos
+después de actualizar productos. El panel, las cuentas de clientes, la
+creación/seguimiento de pedidos y otras funciones que dependen de PHP requieren
+un hosting compatible para funcionar.
+
 ## Panel de administración
 
 El proyecto requiere Apache y PHP de XAMPP, con las extensiones `fileinfo` y GD

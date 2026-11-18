@@ -223,7 +223,12 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
     <script src="https://checkout.wompi.co/widget.js" defer></script>
-    <script src="scripts/inicio.js?v=28"></script>
+    <script>
+        if (window.location.hostname.endsWith('github.io')) {
+            document.querySelector('.account-button')?.setAttribute('href', 'admin/cuenta.html');
+        }
+    </script>
+    <script src="scripts/inicio.js?v=29"></script>
     <script src="scripts/banners.js?v=4"></script>
     <script src="scripts/cookies.js?v=3"></script>
 </body>

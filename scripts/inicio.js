@@ -718,6 +718,9 @@
         imageContainer.className = 'image-container';
         const image = document.createElement('img');
         image.src = product.image;
+        image.addEventListener('error', () => {
+          image.src = 'img/aras-banner-demo.svg';
+        }, { once: true });
         image.alt = `${product.name} de ARAS`;
         image.loading = 'lazy';
         imageContainer.append(image);
@@ -798,21 +801,50 @@
     const categoryGrid = document.querySelector('.category-grid');
     if (!categoryGrid) return;
 
-    categoryGrid.querySelectorAll('[data-custom-category]').forEach(card => card.remove());
-    Object.entries(categories).forEach(([key, label]) => {
-      if (BUILT_IN_CATEGORY_KEYS.has(key)) return;
+    const allCard = categoryGrid.querySelector('[data-filter="all"]');
+    categoryGrid.replaceChildren(...(allCard ? [allCard] : []));
+
+    if (allCard) {
+      const collage = allCard.querySelector('.category-collage');
+      const images = products.slice(0, 4).map(product => product.image);
+      collage?.querySelectorAll('img').forEach((image, index) => {
+        const source = images[index];
+        image.hidden = !source;
+        if (source) image.src = source;
+        image.addEventListener('error', () => {
+          image.src = 'img/aras-banner-demo.svg';
+        }, { once: true });
+      });
+    }
+
+    const productCategories = new Set(products.map(product => product.category));
+    const availableCategories = Object.entries(categories)
+      .filter(([key]) => productCategories.has(key));
+    productCategories.forEach(key => {
+      if (!availableCategories.some(([categoryKey]) => categoryKey === key)) {
+        const label = CATEGORY_LABELS[key] || key.replace(/[-_]+/g, ' ');
+        availableCategories.push([key, label]);
+      }
+    });
+
+    availableCategories.forEach(([key, label]) => {
+      if (typeof key !== 'string' || typeof label !== 'string') return;
+      const product = products.find(item => item.category === key);
+      if (!product) return;
 
       const button = document.createElement('button');
       button.className = 'category-card';
       button.type = 'button';
       button.dataset.filter = key;
-      button.dataset.customCategory = 'true';
       button.setAttribute('aria-label', `Ver categoría ${label}`);
 
       const image = document.createElement('img');
-      image.src = categoryImages[key] || products.find(product => product.category === key)?.image || 'img/aras-banner-demo.svg';
+      image.src = categoryImages[key] || product.image || 'img/aras-banner-demo.svg';
       image.alt = '';
       image.loading = 'lazy';
+      image.addEventListener('error', () => {
+        image.src = 'img/aras-banner-demo.svg';
+      }, { once: true });
 
       const caption = document.createElement('span');
       caption.className = 'category-label';
@@ -820,6 +852,17 @@
       button.append(image, caption);
       categoryGrid.append(button);
     });
+  }
+
+  async function loadStaticCatalog() {
+    const response = await fetch('catalogo-static.json', {
+      headers: { Accept: 'application/json' },
+      cache: 'no-store'
+    });
+    if (!response.ok) throw new Error('No fue posible leer el catálogo estático de ARAS.');
+    const data = await response.json();
+    if (!Array.isArray(data.products)) throw new Error('El catálogo estático tiene un formato inválido.');
+    return data;
   }
 
   function updateProductAvailability() {
@@ -845,9 +888,15 @@
 
   async function loadProducts() {
     try {
-      const response = await fetch('api/productos.php', { headers: { Accept: 'application/json' }, cache: 'no-store' });
-      if (!response.ok) throw new Error(`El servidor respondió con estado ${response.status}.`);
-      const data = await response.json();
+      let data;
+      try {
+        const response = await fetch('api/productos.php', { headers: { Accept: 'application/json' }, cache: 'no-store' });
+        if (!response.ok) throw new Error(`El servidor respondió con estado ${response.status}.`);
+        data = await response.json();
+      } catch (apiError) {
+        console.warn('La API no está disponible; se cargará el catálogo estático:', apiError);
+        data = await loadStaticCatalog();
+      }
       if (!Array.isArray(data.products)) throw new Error('La respuesta del catálogo tiene un formato inválido.');
       if (!Number.isInteger(data.low_stock_threshold) || data.low_stock_threshold < 1) {
         throw new Error('El umbral de inventario bajo tiene un formato inválido.');
@@ -859,9 +908,9 @@
       INVENTORY_ENABLED = data.inventory_enabled;
       products = data.products;
       if (data.categories && typeof data.categories === 'object' && !Array.isArray(data.categories)) {
-        CATEGORY_LABELS = data.categories;
-        renderCategoryCards(data.categories, data.category_images || {});
+        CATEGORY_LABELS = { ...CATEGORY_LABELS, ...data.categories };
       }
+      renderCategoryCards(CATEGORY_LABELS, data.category_images || {});
       renderProducts();
     } catch (error) {
       console.error('No se pudo cargar el catálogo de ARAS:', error);
