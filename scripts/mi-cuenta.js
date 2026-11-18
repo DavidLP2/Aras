@@ -1,5 +1,5 @@
 (() => {
-  const endpoint = 'api/cuenta-cliente';
+  const endpoint = '../api/cuenta-cliente';
   const authView = document.getElementById('customer-auth-view');
   const profileView = document.getElementById('customer-profile-view');
   const notice = document.querySelector('[data-account-notice]');

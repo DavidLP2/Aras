@@ -1256,7 +1256,12 @@
     if (hamburgerBtn) hamburgerBtn.addEventListener('click', toggleNavMenu);
     if (navMenu) {
       navMenu.addEventListener('click', event => {
-        if (event.target.closest('a') && navMenu.classList.contains('open')) toggleNavMenu();
+        const navLink = event.target.closest('a');
+        if (!navLink) return;
+        if (navMenu.classList.contains('open')) toggleNavMenu();
+        if (navLink.matches('[data-focus-search]')) {
+          document.getElementById('search-bar')?.focus({ preventScroll: true });
+        }
       });
     }
     document.addEventListener('keydown', event => {
