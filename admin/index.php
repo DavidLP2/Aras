@@ -1114,7 +1114,7 @@ $outOfStockProducts = $siteSettings['inventory_enabled'] ? count(array_filter(
     <link rel="icon" href="../img/aras-favicon.svg" type="image/svg+xml">
     <link rel="icon" href="../img/favicon.ico?v=2" sizes="any">
     <title>Panel de tienda | ARAS</title>
-    <link rel="stylesheet" href="admin.css?v=47">
+    <link rel="stylesheet" href="admin.css?v=50">
 </head>
 <body>
     <main class="admin-shell">
@@ -1644,16 +1644,15 @@ $outOfStockProducts = $siteSettings['inventory_enabled'] ? count(array_filter(
                                     <div class="product-add-menu">
                                         <?php if (in_array('add-product', $permissions, true)): ?>
                                             <button class="product-add-main" type="button" data-open-product-create>Agregar producto</button>
-                                            <?php if (in_array('products', $permissions, true)): ?>
-                                                <details class="product-add-dropdown">
-                                                    <summary aria-label="Más opciones para agregar productos" title="Más opciones">⌄</summary>
-                                                    <div class="product-add-dropdown-menu">
-                                                        <button type="button" data-open-product-import>Agregar productos masivo</button>
-                                                    </div>
-                                                </details>
-                                            <?php endif; ?>
-                                        <?php elseif (in_array('products', $permissions, true)): ?>
-                                            <button class="product-add-main" type="button" data-open-product-import>Agregar productos masivo</button>
+                                        <?php endif; ?>
+                                        <?php if (in_array('products', $permissions, true)): ?>
+                                            <details class="product-add-dropdown">
+                                                <summary aria-label="Más opciones para productos" title="Más opciones">⌄</summary>
+                                                <div class="product-add-dropdown-menu">
+                                                    <button type="button" data-open-product-import>Agregar productos masivo</button>
+                                                    <a class="product-export-action" href="exportar-productos" download>Exportar productos a Excel</a>
+                                                </div>
+                                            </details>
                                         <?php endif; ?>
                                     </div>
                                 <?php endif; ?>
@@ -1750,6 +1749,7 @@ $outOfStockProducts = $siteSettings['inventory_enabled'] ? count(array_filter(
                                 <?php foreach ($products as $product): ?>
                                     <?php if (!is_array($product)) { continue; } ?>
                                     <?php
+                                    $productId = (string) ($product['id'] ?? '');
                                     $productStock = (int) ($product['stock'] ?? 0);
                                     $productStatus = empty($product['active'])
                                         ? 'Oculto'
@@ -1777,13 +1777,27 @@ $outOfStockProducts = $siteSettings['inventory_enabled'] ? count(array_filter(
                                             <?php endif; ?>
                                         </div>
                                         <?php if (in_array('products', $permissions, true)): ?>
-                                        <button class="product-edit-toggle" type="button" aria-expanded="false" aria-controls="product-edit-form-<?= escapeHtml((string) ($product['id'] ?? '')) ?>">Editar</button>
-                                        <div class="product-edit-form-area" id="product-edit-form-<?= escapeHtml((string) ($product['id'] ?? '')) ?>" hidden>
-                                            <form method="post" enctype="multipart/form-data">
+                                        <button class="product-edit-toggle" type="button" data-open-product-edit aria-expanded="false" aria-controls="product-edit-dialog-<?= escapeHtml($productId) ?>">Editar</button>
+                                        <dialog
+                                            class="category-dialog product-create-dialog product-edit-dialog"
+                                            id="product-edit-dialog-<?= escapeHtml($productId) ?>"
+                                            aria-labelledby="product-edit-title-<?= escapeHtml($productId) ?>"
+                                            data-open="<?= $action === 'save_product' && (string) ($_POST['product_id'] ?? '') === $productId && $error !== '' ? 'true' : 'false' ?>">
+                                            <div class="category-dialog-card">
+                                                <div class="category-dialog-heading">
+                                                    <div>
+                                                        <p class="eyebrow">GESTIONA TU CATÁLOGO</p>
+                                                        <h2 id="product-edit-title-<?= escapeHtml($productId) ?>">Editar producto</h2>
+                                                    </div>
+                                                    <button type="button" class="category-dialog-close" data-close-product-edit aria-label="Cerrar">×</button>
+                                                </div>
+                                                <p class="category-dialog-description">Actualiza la información, las opciones o las fotos de este producto.</p>
+                                                <?php if ($action === 'save_product' && (string) ($_POST['product_id'] ?? '') === $productId && $error !== ''): ?><p class="form-error category-dialog-error" role="alert"><?= escapeHtml($error) ?></p><?php endif; ?>
+                                            <form method="post" enctype="multipart/form-data" class="product-edit-form">
                                                 <input type="hidden" name="csrf_token" value="<?= escapeHtml($token) ?>">
                                                 <input type="hidden" name="action" value="save_product">
                                                 <input type="hidden" name="return_section" value="products">
-                                                <input type="hidden" name="product_id" value="<?= escapeHtml((string) ($product['id'] ?? '')) ?>">
+                                                <input type="hidden" name="product_id" value="<?= escapeHtml($productId) ?>">
                                                 <label>Nombre</label>
                                                 <input name="name" maxlength="120" value="<?= escapeHtml((string) ($product['name'] ?? '')) ?>" required>
                                                 <label>Precio (COP)</label>
@@ -1809,7 +1823,7 @@ $outOfStockProducts = $siteSettings['inventory_enabled'] ? count(array_filter(
                                                         <div class="product-gallery-previews product-gallery-items" data-gallery-items aria-live="polite">
                                                             <?php foreach ($product['images'] as $imageIndex => $_image): ?>
                                                                 <div class="product-gallery-item" data-gallery-item data-image-key="<?= escapeHtml($_image) ?>">
-                                                                    <img src="../api/imagen-producto.php?id=<?= rawurlencode((string) ($product['id'] ?? '')) ?>&amp;index=<?= (int) $imageIndex ?>" alt="Foto <?= $imageIndex + 1 ?> de <?= escapeHtml((string) ($product['name'] ?? 'producto')) ?>" loading="lazy">
+                                                                    <img src="../api/imagen-producto.php?id=<?= rawurlencode($productId) ?>&amp;index=<?= (int) $imageIndex ?>" alt="Foto <?= $imageIndex + 1 ?> de <?= escapeHtml((string) ($product['name'] ?? 'producto')) ?>" loading="lazy">
                                                                     <span class="product-gallery-position"><?= $imageIndex === 0 ? 'Principal' : 'Foto ' . ($imageIndex + 1) ?></span>
                                                                     <div class="product-gallery-item-actions">
                                                                         <button type="button" data-gallery-move="up" aria-label="Mover foto <?= $imageIndex + 1 ?> arriba" <?= $imageIndex === 0 ? 'disabled' : '' ?>>↑</button>
@@ -1819,8 +1833,8 @@ $outOfStockProducts = $siteSettings['inventory_enabled'] ? count(array_filter(
                                                                 </div>
                                                             <?php endforeach; ?>
                                                         </div>
-                                                        <input class="image-upload-input" id="product-images-<?= escapeHtml((string) ($product['id'] ?? '')) ?>" name="images[]" type="file" accept="image/jpeg,image/png,image/webp" multiple data-image-gallery-input>
-                                                        <label class="image-upload-dropzone product-gallery-add" for="product-images-<?= escapeHtml((string) ($product['id'] ?? '')) ?>">
+                                                        <input class="image-upload-input" id="product-images-<?= escapeHtml($productId) ?>" name="images[]" type="file" accept="image/jpeg,image/png,image/webp" multiple data-image-gallery-input>
+                                                        <label class="image-upload-dropzone product-gallery-add" for="product-images-<?= escapeHtml($productId) ?>">
                                                             <span class="image-upload-empty">
                                                                 <span class="image-upload-icon" aria-hidden="true">＋</span>
                                                                 <strong>Añadir fotos</strong>
@@ -1836,10 +1850,11 @@ $outOfStockProducts = $siteSettings['inventory_enabled'] ? count(array_filter(
                                             <form method="post" class="delete-form" data-confirm="¿Eliminar este producto? Esta acción no se puede deshacer.">
                                                 <input type="hidden" name="csrf_token" value="<?= escapeHtml($token) ?>">
                                                 <input type="hidden" name="action" value="delete_product">
-                                                <input type="hidden" name="product_id" value="<?= escapeHtml((string) ($product['id'] ?? '')) ?>">
-                                                <button type="submit" class="button-secondary">Eliminar producto</button>
+                                                <input type="hidden" name="product_id" value="<?= escapeHtml($productId) ?>">
+                                                <button type="submit" class="button-danger">Eliminar producto</button>
                                             </form>
-                                        </div>
+                                            </div>
+                                        </dialog>
                                         <?php endif; ?>
                                     </article>
                                 <?php endforeach; ?>
@@ -1945,6 +1960,6 @@ $outOfStockProducts = $siteSettings['inventory_enabled'] ? count(array_filter(
             <span>Desarrollado por <a href="https://www.strokbig.com" target="_blank" rel="noopener noreferrer">STROKBIG</a></span>
         </footer>
     </main>
-    <script src="admin.js?v=24" defer></script>
+    <script src="admin.js?v=27" defer></script>
 </body>
 </html>

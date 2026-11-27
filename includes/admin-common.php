@@ -2375,6 +2375,80 @@ function buildProductImportWorkbook(array $categories): string
     return createProductWorkbookZip($files);
 }
 
+function formatProductImportOptionGroup(array $variant): string
+{
+    $formattedOptions = [];
+    foreach ($variant['options'] as $option) {
+        $formatted = (string) $option['label'];
+        if (isset($option['colors']) && is_array($option['colors']) && $option['colors'] !== []) {
+            $formatted .= '=' . implode('+', $option['colors']);
+        }
+        $formattedOptions[] = $formatted;
+    }
+
+    return (string) $variant['name'] . ': ' . implode(' | ', $formattedOptions);
+}
+
+function buildProductExportWorkbook(array $products, array $categories): string
+{
+    $templatePath = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'plantilla-productos.xlsx';
+    $files = readProductWorkbookZip($templatePath);
+    $sheetPath = 'xl/worksheets/sheet1.xml';
+    if (!isset($files[$sheetPath])) {
+        throw new RuntimeException('No se pudo preparar el archivo Excel de productos.');
+    }
+
+    $worksheet = $files[$sheetPath];
+    if (!preg_match('/<sheetData>(.*?)<\/sheetData>/s', $worksheet, $sheetDataMatch)
+        || !preg_match('/<row\b[^>]*\br="1"[^>]*>.*?<\/row>/s', $sheetDataMatch[1], $headerMatch)) {
+        throw new RuntimeException('La plantilla de productos no tiene encabezados válidos.');
+    }
+
+    $rows = [$headerMatch[0]];
+    $rowNumber = 2;
+    foreach ($products as $product) {
+        $optionGroups = array_values(array_filter(
+            $product['variants'],
+            static fn (array $variant): bool => isset($variant['name'], $variant['options'])
+        ));
+        $values = [
+            (string) $product['name'],
+            (string) $product['price'],
+            (string) ($categories[$product['category']] ?? $product['category']),
+            (string) $product['stock'],
+            !empty($product['active']) ? 'Sí' : 'No',
+            !empty($product['is_new']) ? 'Sí' : 'No',
+            (string) $product['image'],
+            isset($optionGroups[0]) ? formatProductImportOptionGroup($optionGroups[0]) : '',
+            isset($optionGroups[1]) ? formatProductImportOptionGroup($optionGroups[1]) : '',
+            isset($optionGroups[2]) ? formatProductImportOptionGroup($optionGroups[2]) : '',
+        ];
+        $cells = '';
+        foreach ($values as $columnIndex => $value) {
+            $column = chr(ord('A') + $columnIndex);
+            $escapedValue = productWorkbookEscape($value);
+            $cells .= '<c r="' . $column . $rowNumber . '" t="inlineStr"><is><t xml:space="preserve">'
+                . $escapedValue . '</t></is></c>';
+        }
+        $rows[] = '<row r="' . $rowNumber . '">' . $cells . '</row>';
+        $rowNumber++;
+    }
+
+    $worksheet = preg_replace(
+        '/<sheetData>.*?<\/sheetData>/s',
+        '<sheetData>' . implode('', $rows) . '</sheetData>',
+        $worksheet,
+        1,
+        $replacementCount
+    );
+    if (!is_string($worksheet) || $replacementCount !== 1) {
+        throw new RuntimeException('No se pudo completar la hoja de productos.');
+    }
+    $files[$sheetPath] = $worksheet;
+
+    return createProductWorkbookZip($files);
+}
+
 function productImportCategorySlug(string $label): string
 {
     $slugLabel = strtr(mb_strtolower(trim($label), 'UTF-8'), [

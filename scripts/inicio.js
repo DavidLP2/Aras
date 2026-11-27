@@ -699,9 +699,12 @@
   }
 
   function renderProducts() {
+    const sortedProducts = [...products].sort((left, right) =>
+      left.name.localeCompare(right.name, 'es', { sensitivity: 'base', numeric: true })
+    );
     document.querySelectorAll('[data-product-grid]').forEach(grid => {
       const featured = grid.dataset.productGrid === 'featured';
-      const visibleProducts = featured ? products.slice(0, 3) : products;
+      const visibleProducts = featured ? sortedProducts.slice(0, 3) : sortedProducts;
       if (visibleProducts.length === 0) {
         grid.innerHTML = '<p class="catalog-empty">Pronto encontrarás aquí nuestra colección disponible. Estamos preparando nuevos diseños.</p>';
         return;

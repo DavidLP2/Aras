@@ -145,7 +145,68 @@
         sync();
       });
       colorTools.append(colorList, addColorButton);
-      option.append(label, remove, colorToggleLabel, colorTools);
+
+      const measurementToggleLabel = createElement('label', 'variant-measurement-toggle');
+      const measurementToggle = document.createElement('input');
+      measurementToggle.type = 'checkbox';
+      measurementToggle.dataset.optionHasMeasurement = '';
+      const initialMeasurement = typeof initial.label === 'string'
+        ? initial.label.match(/^(\d+(?:[.,]\d+)?)\s*(ml|g|kg|l|oz)$/i)
+        : null;
+      measurementToggle.checked = initialMeasurement !== null;
+      measurementToggleLabel.append(measurementToggle, document.createTextNode(' Agregar cantidad o presentación'));
+
+      const measurementTools = createElement('div', 'variant-measurement-tools');
+      measurementTools.dataset.optionMeasurementTools = '';
+      const quantity = document.createElement('input');
+      quantity.type = 'number';
+      quantity.min = '0.01';
+      quantity.max = '100000';
+      quantity.step = 'any';
+      quantity.inputMode = 'decimal';
+      quantity.placeholder = 'Cantidad';
+      quantity.setAttribute('aria-label', 'Cantidad del producto');
+      quantity.dataset.optionQuantity = '';
+      if (initialMeasurement) quantity.value = initialMeasurement[1].replace(',', '.');
+
+      const unit = document.createElement('select');
+      unit.setAttribute('aria-label', 'Unidad de medida');
+      unit.dataset.optionUnit = '';
+      [['ml', 'ml'], ['g', 'g'], ['kg', 'kg'], ['l', 'L'], ['oz', 'oz']].forEach(([value, text]) => {
+        const unitOption = document.createElement('option');
+        unitOption.value = value;
+        unitOption.textContent = text;
+        unit.append(unitOption);
+      });
+      if (initialMeasurement) unit.value = initialMeasurement[2].toLowerCase();
+      measurementTools.hidden = !measurementToggle.checked;
+      measurementTools.append(quantity, unit);
+
+      const updateMeasurementControls = () => {
+        const enabled = measurementToggle.checked;
+        measurementTools.hidden = !enabled;
+        quantity.disabled = !enabled;
+        quantity.required = enabled;
+        unit.disabled = !enabled;
+      };
+      const updateLabelFromMeasurement = () => {
+        if (!measurementToggle.checked || quantity.value === '') return;
+        const amount = Number(quantity.value);
+        if (!Number.isFinite(amount) || amount < 0.01 || amount > 100000) return;
+        label.value = `${quantity.value} ${unit.value}`;
+        sync();
+      };
+      measurementToggle.addEventListener('change', () => {
+        updateMeasurementControls();
+        updateLabelFromMeasurement();
+        if (measurementToggle.checked) quantity.focus();
+        sync();
+      });
+      quantity.addEventListener('input', updateLabelFromMeasurement);
+      unit.addEventListener('change', updateLabelFromMeasurement);
+      updateMeasurementControls();
+
+      option.append(label, remove, colorToggleLabel, colorTools, measurementToggleLabel, measurementTools);
       label.addEventListener('input', sync);
       updateColorControls(option);
       optionsContainer.append(option);
@@ -711,18 +772,36 @@
   const productVisibilityFilter = document.getElementById('product-visibility-filter');
   const productCategoryFilter = document.getElementById('product-category-filter');
   const productCards = Array.from(document.querySelectorAll('.product-editor[data-product-name]'));
+  const productList = document.querySelector('.product-list');
+  productCards.sort((left, right) =>
+    left.dataset.productName.localeCompare(right.dataset.productName, 'es', { sensitivity: 'base', numeric: true })
+  );
+  productList?.append(...productCards);
   const productCount = document.querySelector('[data-products-count]');
   const productFilterEmpty = document.querySelector('[data-product-filter-empty]');
 
-  document.querySelectorAll('.product-edit-toggle').forEach(button => {
-    const formArea = document.getElementById(button.getAttribute('aria-controls') || '');
-    if (!formArea) return;
+  document.querySelectorAll('[data-open-product-edit]').forEach(button => {
+    const dialog = document.getElementById(button.getAttribute('aria-controls') || '');
+    if (!(dialog instanceof HTMLDialogElement)) return;
 
+    const setExpanded = expanded => button.setAttribute('aria-expanded', String(expanded));
     button.addEventListener('click', () => {
-      const expanded = button.getAttribute('aria-expanded') === 'true';
-      button.setAttribute('aria-expanded', String(!expanded));
-      formArea.hidden = expanded;
+      dialog.showModal();
+      setExpanded(true);
+      dialog.querySelector('input[name="name"]')?.focus();
     });
+    dialog.querySelectorAll('[data-close-product-edit]').forEach(closeButton => {
+      closeButton.addEventListener('click', () => dialog.close());
+    });
+    dialog.addEventListener('click', event => {
+      if (event.target === dialog) dialog.close();
+    });
+    dialog.addEventListener('close', () => setExpanded(false));
+    if (dialog.dataset.open === 'true') {
+      dialog.showModal();
+      setExpanded(true);
+      dialog.querySelector('input[name="name"]')?.focus();
+    }
   });
 
   const normalizeSearchText = value => value

@@ -231,6 +231,10 @@ adjuntan imágenes por separado. Se aceptan JPG, PNG y WebP, hasta 5 MB por foto
 25 MB en total; el sistema las convierte a WebP. Si la celda Foto queda vacía,
 se reutiliza la imagen predeterminada del catálogo.
 
+En el menú de opciones junto a **Agregar producto**, elige **Exportar productos
+a Excel** para descargar el catálogo completo en formato `.xlsx`. La descarga
+requiere permiso de gestión de productos.
+
 La plantilla incluye una hoja con las categorías vigentes y un desplegable en la
 columna **Categoría**. También puedes escribir allí el nombre de una categoría
 nueva: al importar, se agrega automáticamente al catálogo.
