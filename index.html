@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicon.ico?v=2" sizes="any">
     <title>ARAS | Catálogo</title>
     <meta name="description" content="Explora el catálogo ARAS de cuidado personal, belleza y perfumería.">
-    <link rel="stylesheet" href="styles/catalogo.css?v=30">
+    <link rel="stylesheet" href="styles/catalogo.css?v=32">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,6 +94,14 @@
                 <span class="eyebrow">COLECCIÓN ARAS</span>
                 <h2 id="catalog-heading">Cuidado personal, belleza y perfumería</h2>
                 <p>Descubre productos para consentirte y encontrar tus favoritos.</p>
+            </div>
+            <div class="catalog-grid-toolbar">
+                <div class="catalog-tag-filter" id="tag-filter">
+                    <button class="catalog-tag-filter-button" id="tag-filter-button" type="button" aria-label="Filtrar por etiquetas" aria-expanded="false" aria-controls="tag-filter-menu">
+                        <i class="fa-solid fa-tags" aria-hidden="true"></i>
+                    </button>
+                    <div class="catalog-tag-filter-menu" id="tag-filter-menu" role="menu" hidden></div>
+                </div>
             </div>
             <div class="product-grid" data-product-grid="catalog" aria-live="polite">
                 <p class="catalog-empty">Cargando productos...</p>
@@ -228,7 +236,7 @@
             document.querySelector('.account-button')?.setAttribute('href', 'admin/cuenta.html');
         }
     </script>
-    <script src="scripts/inicio.js?v=30"></script>
+    <script src="scripts/inicio.js?v=32"></script>
     <script src="scripts/banners.js?v=4"></script>
     <script src="scripts/cookies.js?v=3"></script>
 </body>

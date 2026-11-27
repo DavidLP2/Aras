@@ -716,6 +716,14 @@
         card.dataset.id = product.id;
         card.dataset.category = product.category;
         card.dataset.stock = String(product.stock);
+        card.dataset.tags = JSON.stringify(
+          (Array.isArray(product.variants) ? product.variants : []).map(variant => ({
+            name: String(variant?.name || ''),
+            options: (Array.isArray(variant?.options) ? variant.options : [])
+              .map(option => String(option?.label || ''))
+              .filter(Boolean)
+          }))
+        );
 
         const imageContainer = document.createElement('div');
         imageContainer.className = 'image-container';
@@ -942,9 +950,98 @@
   // ===============================
   function setupProductFiltering() {
       const searchBar = document.getElementById('search-bar');
+      const tagFilter = document.getElementById('tag-filter');
+      const tagFilterButton = document.getElementById('tag-filter-button');
+      const tagFilterMenu = document.getElementById('tag-filter-menu');
       const categoryGrid = document.querySelector('.category-grid');
       if (!categoryGrid) return;
       const categoryCards = categoryGrid.querySelectorAll('.category-card');
+
+      if (tagFilter && tagFilterButton && tagFilterMenu) {
+          const tagOptions = new Map();
+          products.forEach(product => {
+              (Array.isArray(product.variants) ? product.variants : []).forEach(variant => {
+                  const tagName = String(variant?.name || '').trim();
+                  if (!tagName) return;
+                  if (!tagOptions.has(tagName)) tagOptions.set(tagName, new Map());
+                  (Array.isArray(variant?.options) ? variant.options : []).forEach(option => {
+                      const optionLabel = String(option?.label || '').trim();
+                      if (!optionLabel) return;
+                      const key = `${tagName}\u001f${optionLabel}`;
+                      tagOptions.get(tagName).set(optionLabel, (tagOptions.get(tagName).get(optionLabel) || 0) + 1);
+                  });
+              });
+          });
+
+          tagFilterMenu.replaceChildren();
+
+          const allContainer = document.createElement('div');
+          allContainer.className = 'catalog-tag-filter-all';
+          const allButton = document.createElement('button');
+          allButton.type = 'button';
+          allButton.className = 'catalog-tag-filter-option';
+          allButton.dataset.tagValue = 'all';
+          allButton.setAttribute('role', 'menuitem');
+          allButton.innerHTML = '<span>Todas las etiquetas</span><span class="catalog-tag-filter-count">' + products.length + '</span>';
+          allContainer.append(allButton);
+          tagFilterMenu.append(allContainer);
+
+          tagOptions.forEach((options, tagName) => {
+              const group = document.createElement('div');
+              group.className = 'catalog-tag-filter-group';
+              const title = document.createElement('div');
+              title.className = 'catalog-tag-filter-group-title';
+              title.textContent = tagName;
+              group.append(title);
+              options.forEach((count, optionLabel) => {
+                  const optionButton = document.createElement('button');
+                  optionButton.type = 'button';
+                  optionButton.className = 'catalog-tag-filter-option';
+                  optionButton.dataset.tagValue = `${tagName}\u001f${optionLabel}`;
+                  optionButton.setAttribute('role', 'menuitem');
+                  optionButton.innerHTML = `<span>${escapeHtml(optionLabel)}</span><span class="catalog-tag-filter-count">${count}</span>`;
+                  group.append(optionButton);
+              });
+              tagFilterMenu.append(group);
+          });
+
+          if (tagFilter.dataset.filterReady !== 'true') {
+              tagFilter.dataset.filterReady = 'true';
+              tagFilterButton.addEventListener('click', () => {
+                  const isOpen = tagFilterButton.getAttribute('aria-expanded') === 'true';
+                  tagFilterButton.setAttribute('aria-expanded', String(!isOpen));
+                  tagFilterMenu.hidden = isOpen;
+              });
+
+              tagFilterMenu.addEventListener('click', event => {
+                  const optionButton = event.target.closest('.catalog-tag-filter-option');
+                  if (!optionButton) return;
+                  tagFilter.dataset.currentTag = optionButton.dataset.tagValue || 'all';
+                  tagFilter.classList.toggle('has-filter', tagFilter.dataset.currentTag !== 'all');
+                  tagFilterMenu.querySelectorAll('.catalog-tag-filter-option').forEach(button => {
+                      button.classList.toggle('is-selected', button === optionButton);
+                  });
+                  tagFilterButton.setAttribute('aria-expanded', 'false');
+                  tagFilterMenu.hidden = true;
+                  applyFilters();
+              });
+
+              document.addEventListener('click', event => {
+                  if (!tagFilter.contains(event.target)) {
+                      tagFilterButton.setAttribute('aria-expanded', 'false');
+                      tagFilterMenu.hidden = true;
+                  }
+              });
+
+              document.addEventListener('keydown', event => {
+                  if (event.key === 'Escape') {
+                      tagFilterButton.setAttribute('aria-expanded', 'false');
+                      tagFilterMenu.hidden = true;
+                      tagFilterButton.focus();
+                  }
+              });
+          }
+      }
 
       categoryCards.forEach(button => {
           const filter = button.dataset.filter;
@@ -973,14 +1070,28 @@
       const applyFilters = () => {
           const currentFilter = categoryGrid.dataset.currentFilter || 'all';
           const currentSearchTerm = searchBar?.value.toLowerCase().trim() || '';
+          const currentTag = tagFilter?.dataset.currentTag || 'all';
+          const [tagName, tagOption] = currentTag === 'all'
+              ? ['', '']
+              : currentTag.split('\u001f');
           categoryGrid.closest('main')?.querySelectorAll('.product-grid .producto').forEach(product => {
               const category = product.dataset.category || '';
               const name = product.querySelector('h3').innerText.toLowerCase();
+              let productTags = [];
+              try {
+                  productTags = JSON.parse(product.dataset.tags || '[]');
+              } catch (error) {
+                  productTags = [];
+              }
 
               const categoryMatch = currentFilter === 'all' || category.toLowerCase() === currentFilter;
               const searchMatch = name.includes(currentSearchTerm);
+              const tagMatch = currentTag === 'all' || productTags.some(tag =>
+                  tag.name === tagName
+                  && tag.options.some(option => option === tagOption)
+              );
 
-              if (categoryMatch && searchMatch) {
+              if (categoryMatch && searchMatch && tagMatch) {
                   product.classList.remove('product-hidden');
               } else {
                   product.classList.add('product-hidden');
