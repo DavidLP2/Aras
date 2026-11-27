@@ -957,9 +957,18 @@
       if (!categoryGrid) return;
       const categoryCards = categoryGrid.querySelectorAll('.category-card');
 
-      if (tagFilter && tagFilterButton && tagFilterMenu) {
+      const populateTagMenu = () => {
+          if (!tagFilter || !tagFilterButton || !tagFilterMenu) return;
+
           const tagOptions = new Map();
-          products.forEach(product => {
+          const currentCategory = categoryGrid.dataset.currentFilter || 'all';
+          const currentSearchTerm = searchBar?.value.toLowerCase().trim() || '';
+          const categoryProducts = products.filter(product =>
+              (currentCategory === 'all' || product.category?.toLowerCase() === currentCategory)
+              && (!currentSearchTerm || product.name.toLowerCase().includes(currentSearchTerm))
+          );
+
+          categoryProducts.forEach(product => {
               (Array.isArray(product.variants) ? product.variants : []).forEach(variant => {
                   const tagName = String(variant?.name || '').trim();
                   if (!tagName) return;
@@ -974,6 +983,17 @@
           });
 
           tagFilterMenu.replaceChildren();
+          const currentTag = tagFilter.dataset.currentTag || 'all';
+          const stillAvailable = tagFilter.dataset.currentTag === 'all'
+              || [...tagOptions.keys()].some(tagName => {
+                  const [selectedTagName, selectedOption] = currentTag.split('\u001f');
+                  return tagName === selectedTagName
+                      && tagOptions.get(tagName).has(selectedOption);
+              });
+          if (!stillAvailable) {
+              tagFilter.dataset.currentTag = 'all';
+              tagFilter.classList.remove('has-filter');
+          }
 
           const allContainer = document.createElement('div');
           allContainer.className = 'catalog-tag-filter-all';
@@ -982,7 +1002,7 @@
           allButton.className = 'catalog-tag-filter-option';
           allButton.dataset.tagValue = 'all';
           allButton.setAttribute('role', 'menuitem');
-          allButton.innerHTML = '<span>Todas las etiquetas</span><span class="catalog-tag-filter-count">' + products.length + '</span>';
+          allButton.innerHTML = '<span>Todas las etiquetas</span><span class="catalog-tag-filter-count">' + categoryProducts.length + '</span>';
           allContainer.append(allButton);
           tagFilterMenu.append(allContainer);
 
@@ -1003,6 +1023,13 @@
                   group.append(optionButton);
               });
               tagFilterMenu.append(group);
+          });
+
+          tagFilterMenu.querySelectorAll('.catalog-tag-filter-option').forEach(button => {
+              button.classList.toggle(
+                  'is-selected',
+                  (button.dataset.tagValue || 'all') === (tagFilter.dataset.currentTag || 'all')
+              );
           });
 
           if (tagFilter.dataset.filterReady !== 'true') {
@@ -1042,6 +1069,8 @@
               });
           }
       }
+
+      populateTagMenu();
 
       categoryCards.forEach(button => {
           const filter = button.dataset.filter;
@@ -1101,7 +1130,10 @@
 
       if (searchBar && searchBar.dataset.filterReady !== 'true') {
           searchBar.dataset.filterReady = 'true';
-          searchBar.addEventListener('input', applyFilters);
+          searchBar.addEventListener('input', () => {
+              populateTagMenu();
+              applyFilters();
+          });
       }
 
       if (categoryGrid.dataset.filterReady !== 'true') {
@@ -1115,6 +1147,7 @@
                   card.setAttribute('aria-pressed', String(isSelected));
               });
               categoryGrid.dataset.currentFilter = button.dataset.filter || 'all';
+              populateTagMenu();
               applyFilters();
               document.getElementById('coleccion')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
           });
