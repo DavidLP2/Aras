@@ -15,7 +15,8 @@ try {
     $publicProducts = array_map(static function (array $product): array {
         $imageUrl = static fn (int $index): string => 'api/imagen-producto.php?id='
             . rawurlencode((string) $product['id'])
-            . '&index=' . $index;
+            . '&index=' . $index
+            . '&v=2';
 
         return [
             'id' => (string) $product['id'],

@@ -935,7 +935,11 @@ header {
 .catalog-header p { color: #645b54; }
 .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); align-items: start; gap: 24px; }
 .producto { width: auto; max-width: none; border-radius: 3px; }
-.producto img { object-fit: cover; }
+.image-container { width: 100%; height: 300px; overflow: hidden; border-radius: 10px; }
+.producto .image-container > img { display: block; width: 100%; height: 300px; margin: 0; border-radius: 10px; object-fit: cover; object-position: center; }
+.producto[data-category="accesorios"] .image-container,
+.producto[data-category="accesorios"] .image-container > img { height: 360px; }
+.product-overlay { border-radius: 10px; }
 .product-info h3 { color: var(--text-color); }
 
 @media (max-width: 850px) {
@@ -967,7 +971,10 @@ header {
     .hero-carousel-controls { top: 12px; right: auto; bottom: auto; left: 50%; transform: translateX(-50%); }
     .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
     .producto { width: auto; max-width: none; }
-    .producto img { height: 220px; }
+    .image-container { height: 220px; }
+    .producto .image-container > img { height: 220px; }
+    .producto[data-category="accesorios"] .image-container,
+    .producto[data-category="accesorios"] .image-container > img { height: 280px; }
     .product-info { padding: 13px 10px; }
     .product-info h3 { font-size: .94rem; }
     .product-overlay { position: static; width: auto; height: auto; padding: 10px; background: transparent; opacity: 1; }

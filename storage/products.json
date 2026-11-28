@@ -12694,5 +12694,103 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "1dcbf7d0ddeb11e7189ad87eb3798cd2",
+        "name": "Correa para celular",
+        "price": 15000,
+        "category": "accesorios",
+        "stock": 0,
+        "image": "59083047688cc21911cc755374ece89a.webp",
+        "images": [
+            "59083047688cc21911cc755374ece89a.webp"
+        ],
+        "active": true,
+        "is_new": true,
+        "variants": []
+    },
+    {
+        "id": "ee14fa1573eafa5b325f445b9a5b1a77",
+        "name": "Llavero personalizado",
+        "price": 12000,
+        "category": "accesorios",
+        "stock": 0,
+        "image": "a0497ac4ea441bcc0fdce5b677104b0c.webp",
+        "images": [
+            "a0497ac4ea441bcc0fdce5b677104b0c.webp"
+        ],
+        "active": true,
+        "is_new": true,
+        "variants": []
+    },
+    {
+        "id": "953a68c560c8dae07a9710990c3096b0",
+        "name": "Collar personalizado",
+        "price": 20000,
+        "category": "accesorios",
+        "stock": 0,
+        "image": "f4a5453d27bf8a651756fdbcf653d162.webp",
+        "images": [
+            "f4a5453d27bf8a651756fdbcf653d162.webp"
+        ],
+        "active": true,
+        "is_new": true,
+        "variants": []
+    },
+    {
+        "id": "91399087b245266f5e67db5df192cce4",
+        "name": "Pulsera personalizada",
+        "price": 18000,
+        "category": "accesorios",
+        "stock": 0,
+        "image": "7dbcc8653b716f8dd7188825df6e9da5.webp",
+        "images": [
+            "7dbcc8653b716f8dd7188825df6e9da5.webp"
+        ],
+        "active": true,
+        "is_new": true,
+        "variants": []
+    },
+    {
+        "id": "b3be7e7a8fe67562eb606ba068b5b0f9",
+        "name": "Tobillera personalizada",
+        "price": 18000,
+        "category": "accesorios",
+        "stock": 0,
+        "image": "4b8060cbcc6775ed19337c0b6d8fdd7e.webp",
+        "images": [
+            "4b8060cbcc6775ed19337c0b6d8fdd7e.webp"
+        ],
+        "active": true,
+        "is_new": true,
+        "variants": []
+    },
+    {
+        "id": "7dca3ab2fa984f7230729ad36ecc02ed",
+        "name": "Correa para gafas",
+        "price": 18000,
+        "category": "accesorios",
+        "stock": 0,
+        "image": "3785815341ce23de57286940dc8e7122.webp",
+        "images": [
+            "3785815341ce23de57286940dc8e7122.webp"
+        ],
+        "active": true,
+        "is_new": true,
+        "variants": []
+    },
+    {
+        "id": "7e4455ac239cfb1f01c7ea9375c24575",
+        "name": "Collar personalizado para mascota",
+        "price": 22000,
+        "category": "accesorios",
+        "stock": 0,
+        "image": "505b9e8bd131eb65131d48ec01a92c6a.webp",
+        "images": [
+            "505b9e8bd131eb65131d48ec01a92c6a.webp"
+        ],
+        "active": true,
+        "is_new": true,
+        "variants": []
     }
 ]

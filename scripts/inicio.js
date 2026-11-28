@@ -7,7 +7,8 @@
   let CATEGORY_LABELS = {
     'cuidado-personal': 'CUIDADO PERSONAL',
     belleza: 'BELLEZA',
-    perfumeria: 'PERFUMERÍA'
+    perfumeria: 'PERFUMERÍA',
+    accesorios: 'ACCESORIOS'
   };
   const BUILT_IN_CATEGORY_KEYS = new Set(Object.keys(CATEGORY_LABELS));
 
@@ -817,7 +818,17 @@
 
     if (allCard) {
       const collage = allCard.querySelector('.category-collage');
-      const images = products.slice(0, 4).map(product => product.image);
+      const availableCategoryKeys = Object.keys(categories).filter(key =>
+        products.some(product => product.category === key)
+      );
+      const collageOrder = [0, 1, 1, 0];
+      const images = availableCategoryKeys.length > 0
+        ? collageOrder.map(categoryIndex => {
+            const key = availableCategoryKeys[categoryIndex % availableCategoryKeys.length];
+            const categoryProduct = products.find(product => product.category === key);
+            return categoryImages[key] || categoryProduct?.image || '';
+          })
+        : ['', '', '', ''];
       collage?.querySelectorAll('img').forEach((image, index) => {
         const source = images[index];
         image.hidden = !source;
